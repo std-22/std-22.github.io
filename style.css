@@ -16,6 +16,16 @@ nav {
     margin-left: auto;
 }
 
+nav a:hover{
+    letter-spacing: 1px;
+    height: 50px;
+    scrollbar-highlight-color: #fff;
+    font-size: 30px;
+    border-spacing: 25px;
+    margin-left: auto;
+    text-shadow: #80DDD9 0 0 5px;
+}
+
 #header-menu {
     text-align: right;
     margin: 15px;
