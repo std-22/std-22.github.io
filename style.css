@@ -23,6 +23,7 @@ nav a:hover{
     font-size: 30px;
     border-spacing: 25px;
     display: inline-block;
+    margin-left: auto;
     text-shadow: #80DDD9 0 0 5px;
 }
 
