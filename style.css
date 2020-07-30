@@ -48,12 +48,20 @@ nav a:hover{
     right: 0;
 }
 
-.social_nets {
-    margin-top: 10px;
+.social_nets{
+    margin-top: 25px;
+}
+
+.social_nets a{
+    filter: grayscale(50%);
+}
+
+.social_nets a:hover{
+    filter: grayscale(0%);
 }
 
 .rights {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 a {
