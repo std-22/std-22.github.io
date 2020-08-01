@@ -16,25 +16,46 @@ nav {
     margin-left: auto;
 }
 
-nav a:hover{
-    letter-spacing: 1px;
-    height: 50px;
-    scrollbar-highlight-color: #fff;
-    font-size: 30px;
-    border-spacing: 25px;
-    text-shadow: #80DDD9 0 0 5px;
-}
 
 #header-menu {
     text-align: right;
     margin: 15px;
 }
 
+.link-hover-center a {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.link-hover-center a:after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.link-hover-center a:hover:after,
+.link-hover-center a:focus:after {
+    width: 100%;
+}
+
 .logo {
     margin-top: 5px;
 }
 
-
+.active {
+    border-bottom: 3px solid #fff;
+}
 
 /*FOOTER*/
 .footer {
