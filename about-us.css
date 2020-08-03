@@ -50,6 +50,7 @@ nav {
     cursor: pointer;
     position: relative;
 }
+
 .link-hover-center a:after {
     display: block;
     content: "";
@@ -65,6 +66,7 @@ nav {
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
 .link-hover-center a:hover:after,
 .link-hover-center a:focus:after {
     width: 100%;
@@ -72,10 +74,6 @@ nav {
 
 .logo {
     margin-top: 5px;
-}
-
-#videoDiv {
-    margin-top: 15px;
 }
 
 /*BODY*/
