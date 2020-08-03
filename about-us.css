@@ -77,6 +77,53 @@ nav {
 }
 
 /*BODY*/
+.slide p,
+.slide [type="checkbox"]{
+    display:none;
+}
+ 
+.slide [type="checkbox"]:checked ~ p {
+    display:block;
+}
+
+.slide {
+    margin-top: 10px;
+}
+
+label {
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 14px; /* Размер текста */
+    padding: 5px 10px;
+    
+}
+
+.information {
+    color: black;
+    margin: 5px;
+    text-align: center;
+}
+
+.Ilya {
+    float: left;
+    width: 47%;
+    color: black;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.responsive-Ilya {
+    width: 50%;
+    height: auto;
+}
+
+.Ashot {
+    float: right;
+    width: 50%;
+    color: black;
+    margin-top: 5px;
+    margin-right: 5px;
+}
 
 /*FOOTER*/
 .footer {
