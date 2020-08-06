@@ -1,6 +1,15 @@
 html {
     background: #fff;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.content {
+	min-height: calc(100vh - 80px);
+}
+
 /*HEADER*/
 header {  
     background: #473FA8;   

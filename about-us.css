@@ -5,8 +5,7 @@ a {
 }
 
 .responsive {
-    width: 50%;
-    float: left;
+    width: 100%;
     margin: 0 1em 1em 0;
 }
 
@@ -98,10 +97,12 @@ label {
     
 }
 
-.information {
-    color: black;
-    margin: 5px;
-    text-align: center;
+
+
+.members {
+    margin-top: 5px;
+    background: blueviolet;
+    margin-bottom: 20px;
 }
 
 .Ilya {
@@ -110,23 +111,35 @@ label {
     color: black;
     margin-top: 5px;
     margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .responsive-Ilya {
     width: 50%;
     height: auto;
+    margin-left: 60px;
 }
 
 .Ashot {
     float: right;
-    width: 50%;
+    width: 47%;
     color: black;
     margin-top: 5px;
     margin-right: 5px;
+    margin-bottom: 5px;
+
+}
+
+.responsive-Ashot {
+    width: 50%;
+    height: auto;
 }
 
 /*FOOTER*/
+
+
 .footer {
+    height: 110px;
     background: #473FA8;
     margin-left: auto;
     margin-right: auto;
