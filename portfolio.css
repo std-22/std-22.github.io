@@ -1,12 +1,17 @@
+html {
+    background: #fff;
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
 
 /*HEADER*/
 header {  
     background: #473FA8;   
 }
 
-nav {
+nav{
     letter-spacing: 1px;
-    height: 50px;
+    height: 30px;
     color: #fff;
     font-size: 30px;
     border-spacing: 25px;
@@ -14,13 +19,24 @@ nav {
     margin-left: auto;
 }
 
-#header-menu {
-    text-align: right;
-    margin: 15px;
+nav a{
+    bottom: 15px;
 }
 
-.logo {
-    margin-top: 5px;
+.social_nets{
+    position: relative;
+    left: 900px;
+    bottom: 3px;
+    filter: grayscale(50%);
+}
+
+.social_nets:hover{
+    filter: grayscale(0%);
+}
+
+#header-menu {
+    text-align: right;
+    margin: 5px;
 }
 
 .link-hover-center a {
@@ -50,6 +66,11 @@ nav {
     width: 100%;
 }
 
+.logo {
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
 .active {
     border-bottom: 3px solid #fff;
 }
@@ -63,6 +84,7 @@ nav {
 
 /*FOOTER*/
 .footer {
+    height: 40px;
     background: #473FA8;
     margin-left: auto;
     margin-right: auto;
@@ -73,24 +95,11 @@ nav {
     right: 0;
 }
 
-.social_nets{
-    margin-top: 25px;
-}
-
-.social_nets a{
-    filter: grayscale(50%);
-}
-
-.social_nets a:hover{
-    filter: grayscale(0%);
-}
-
 .rights {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 a {
     color: white;
     text-decoration: none;
 }
-
