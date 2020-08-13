@@ -25,7 +25,7 @@ nav a{
 
 .social_nets{
     position: relative;
-    left: 900px;
+    left: 915px;
     bottom: 3px;
     filter: grayscale(50%);
 }
@@ -83,7 +83,7 @@ nav a{
 
 .information{
     color: black;
-    border-spacing: 180px 10px; 
+    border-spacing: 180px 10px;
 }
 
 h1{
@@ -101,10 +101,12 @@ p{
 
 .firstBlock{
     display: table-cell;
+    max-width: 250px;
 }
 
 .secondBlock{
     display: table-cell;
+    max-width: 500px;
 }
 
 /*FOOTER*/
