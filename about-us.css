@@ -24,9 +24,10 @@ nav a{
 }
 
 .social_nets{
+    float: right;
     position: relative;
-    left: 915px;
-    bottom: 3px;
+    right: 25px;
+    top: 7px;
     filter: grayscale(50%);
 }
 
