@@ -84,30 +84,22 @@ nav a{
 
 .information{
     color: black;
-    border-spacing: 180px 10px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Comfortaa', cursive;
 }
 
 h1{
-    font-family: 'Caveat', cursive;
-    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
     text-align: center;
 }
 
 p{
-    font-family: 'Caveat', cursive;
-    font-family: 'Comfortaa', cursive;
-    font-size: 25px;
+    font-size: 28px;
     text-align: left;
 }
 
-.firstBlock{
-    display: table-cell;
-    max-width: 250px;
-}
-
-.secondBlock{
-    display: table-cell;
-    max-width: 500px;
+#space{
+    color: white;
 }
 
 /*FOOTER*/
