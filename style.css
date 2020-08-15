@@ -27,6 +27,7 @@ nav a{
     float: right;
     position: relative;
     right: 1%;
+    margin: 0.5% 0.3%;
     filter: grayscale(50%);
 }
 
@@ -67,7 +68,7 @@ nav a{
 }
 
 .logo {
-    margin-top: 1%;
+    margin-top: 0.5%;
     padding-left: 0.5%;
 }
 
