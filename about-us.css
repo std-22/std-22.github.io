@@ -26,8 +26,8 @@ nav a{
 .social_nets{
     float: right;
     position: relative;
-    right: 25px;
-    top: 7px;
+    right: 1%;
+    margin: 0.5% 0.3%;
     filter: grayscale(50%);
 }
 
@@ -47,7 +47,6 @@ nav a{
     cursor: pointer;
     position: relative;
 }
-
 .link-hover-center a:after {
     display: block;
     content: "";
@@ -63,15 +62,14 @@ nav a{
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-
 .link-hover-center a:hover:after,
 .link-hover-center a:focus:after {
     width: 100%;
 }
 
 .logo {
-    margin-top: 5px;
-    padding-left: 10px;
+    margin-top: 0.5%;
+    padding-left: 0.5%;
 }
 
 .active {
