@@ -26,8 +26,8 @@ nav a{
 .social_nets{
     float: right;
     position: relative;
-    right: 25px;
-    top: 7px;
+    right: 1%;
+    margin: 0.5% 0.3%;
     filter: grayscale(50%);
 }
 
@@ -68,8 +68,8 @@ nav a{
 }
 
 .logo {
-    margin-top: 5px;
-    padding-left: 10px;
+    margin-top: 0.5%;
+    padding-left: 0.5%;
 }
 
 .active {
