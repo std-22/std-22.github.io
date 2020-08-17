@@ -5,7 +5,7 @@ function myFunction(imgs) {
     expandText = document.getElementById("Ashot-info");
     expandText.style.display = "none";
 
-    expandText = document.getElementById("r2");
+    expandText = document.getElementById("Nadya-info");
     expandText.style.display = "none";
     
     switch(imgs.alt){
@@ -17,8 +17,8 @@ function myFunction(imgs) {
             expandText = document.getElementById("Ashot-info");
             expandText.style.display = "block";
             break;
-        case "Noname":
-            expandText = document.getElementById("r2");
+        case "Nadya":
+            expandText = document.getElementById("Nadya-info");
             expandText.style.display = "block";
             break;
     }
