@@ -1,29 +1,33 @@
 html {
-    background: #fff;
+    background: #473FA8;
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
 }
 
 /*HEADER*/
 header {  
-    background: #473FA8;
+    background: #473FA8;   
 }
 
 nav{
-    max-height: 5px;
+    letter-spacing: 1px;
+    height: 30px;
+    color: #fff;
+    font-size: 30px;
+    border-spacing: 25px;
     display: inline-block;
+    margin-left: auto;
 }
 
-nav a:not(:last-child){
-    letter-spacing: 1px;
-    color: #fff;
-    font-size: 28px;
+nav a{
     bottom: 15px;
 }
 
 .social_nets{
-    margin-left:10%;
-    margin-bottom:10%;
+    float: right;
+    position: relative;
+    right: 25px;
+    top: 7px;
     filter: grayscale(50%);
 }
 
@@ -36,15 +40,14 @@ nav a:not(:last-child){
     margin: 5px;
 }
 
-.link-hover-center a{
+.link-hover-center a {
     display: inline-block;
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
     position: relative;
 }
-
-.link-hover-center a:not(:last-child):after {
+.link-hover-center a:after {
     display: block;
     content: "";
     background-color: #fff;
@@ -59,7 +62,6 @@ nav a:not(:last-child){
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-
 .link-hover-center a:hover:after,
 .link-hover-center a:focus:after {
     width: 100%;
@@ -76,9 +78,74 @@ nav a:not(:last-child){
 
 /*PORTFOLIO */
 .portfolio {
-    margin-top: 20px;
-    margin-left: 25%;
+    display: grid;  
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 200px);     
+}
+
+.portfolio-theme-1 > p {
+    text-align: center;
+    font-size: 30px;
+    color: #80DDD9;
+}
+
+#example-1 {
+   background: url("image/about-us-2.png"); 
+   background-size: 100% 100%;
+}
+#example-2 {
+    background: url("image/Future-examples.png"); 
+    background-size: 100% 100%;
     color:black;
+}
+#example-3 {
+    background: url("image/Future-examples.png"); 
+    background-size: 100% 100%;
+    color:black;
+ }
+#example-4 {
+    background: url("image/Future-examples.png"); 
+    background-size: 100% 100%;
+    color:black;
+}
+#example-5 {
+    background: url("image/Future-examples.png"); 
+    background-size: 100% 100%;
+    color:black;
+}
+#example-6 {
+    background: url("image/Future-examples.png"); 
+    color:black;
+    background-size: 100% 100%;
+}
+
+.example {
+    background: rgba(0,0,0,0.45);
+    position: relative;
+    -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+    color: #fff;
+    overflow: hidden;
+}
+
+.example .title{
+    font-size: 16pt;
+    line-height: 1.2em;
+    height: 4.8em;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 10pt;
+    overflow: hidden;
+}
+
+.example:hover .title{
+    -webkit-transition: all 0.4s cubic-bezier(0,0,0.58,1);
+    bottom: 0px;
+    font-size: 24px;
+}
+
+.title{
+  bottom: -250px;
 }
 
 /*FOOTER*/
