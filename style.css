@@ -1,44 +1,50 @@
 html {
     background: #fff;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-}
-.content {
-	min-height: calc(100vh - 80px);
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
 }
 
 /*HEADER*/
 header {  
-    background: #473FA8;   
+    background: #473FA8;
 }
 
-nav {
-    letter-spacing: 1px;
-    height: 50px;
-    color: #fff;
-    font-size: 30px;
-    border-spacing: 25px;
+nav{
+    max-height: 5px;
     display: inline-block;
-    margin-left: auto;
 }
 
+nav a:not(:last-child){
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 28px;
+    bottom: 15px;
+}
+
+.social_nets{
+    margin-left:10%;
+    margin-bottom:10%;
+    filter: grayscale(50%);
+}
+
+.social_nets:hover{
+    filter: grayscale(0%);
+}
 
 #header-menu {
     text-align: right;
-    margin: 15px;
+    margin: 5px;
 }
 
-.link-hover-center a {
+.link-hover-center a{
     display: inline-block;
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
     position: relative;
 }
-.link-hover-center a:after {
+
+.link-hover-center a:not(:last-child):after {
     display: block;
     content: "";
     background-color: #fff;
@@ -53,6 +59,7 @@ nav {
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
 .link-hover-center a:hover:after,
 .link-hover-center a:focus:after {
     width: 100%;
@@ -60,14 +67,46 @@ nav {
 
 .logo {
     margin-top: 5px;
+    padding-left: 10px;
 }
 
 .active {
     border-bottom: 3px solid #fff;
 }
 
+/*body*/
+body {
+    background-color:#473FA8 !important;
+}
+
+.responsive{
+    width: 100%;
+    margin: 0 1em 1em 0;
+}
+
+.information{
+    color: #80DDD9;
+    font-family: 'Caveat', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+
+h1{
+    font-size: 220%;
+    text-align: center;
+}
+
+p{
+    font-size: 175%;
+    text-align: left;
+}
+
+#space{
+    color: #473FA8;
+}
+
 /*FOOTER*/
 .footer {
+    height: 40px;
     background: #473FA8;
     margin-left: auto;
     margin-right: auto;
@@ -78,24 +117,11 @@ nav {
     right: 0;
 }
 
-.social_nets{
-    margin-top: 25px;
-}
-
-.social_nets a{
-    filter: grayscale(50%);
-}
-
-.social_nets a:hover{
-    filter: grayscale(0%);
-}
-
 .rights {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 a {
     color: white;
     text-decoration: none;
 }
-

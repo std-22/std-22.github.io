@@ -4,6 +4,9 @@
             <!--Фавикон-->
             <link rel="icon" href="favicon.ico">
 
+            <!--мобильная адаптация-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
             <meta charset="UTF-8">
             <title>О нас</title>
             <!--Нормализация стилей-->
@@ -14,71 +17,62 @@
 
             <!--Подключение шрифтов-->
             <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
         </head>
 
         <body >
             <header>
-                <img src="image/logo_img.png" alt="logo" height=50px width=50px class="logo">
-                <nav class="link-hover-center">    
-                    <a href="index.html" id="header-menu" class="inactive">Studio 22</a>
+                <nav class="link-hover-center">
+                    <img src="image/logo_img.png" alt="logo" height=50px width=50px class="logo">    
+                    <a href="index.html" id="header-menu">Studio 22</a>
                     <a href="about_us.html" id="header-menu" class="active">О нас</a>
-                    <a href="portfolio.html" id="header-menu" class="inactive">Наши проекты</a>
+                    <a href="portfolio.html" id="header-menu">Наши проекты</a>
+                    <a href="https://vk.com/std_22"><img src="image/vk.png" height=40px width=40px class="social_nets"></a>
                 </nav>
             </header>
-
-            <div class="content">
-                <div> 
-                    <img src="image/about-us-2.png" alt="" class="responsive">
-                </div>
-          
-                <div class="members">
-                    <div class="Ilya">
-                        <img src="image/temp.jpg" class="responsive-Ilya">
-                        <br>
-                        Илья Толоконов<br>
-                        Креативый директор и программист Studio-22<br>
-                        Студент 2-ого курса РТУ МИРЭА<br>
-                        <div class="slide">
-                            <label for="button-Ilya">
-                                Кнопка
-                            </label>
-                            <input type="checkbox" id="button-Ilya">
-                            <p class="content">Здесь подробная инфорамция о человеке</p>
-                        </div>
-                    </div>
-
-                    <div class="Ashot">
-                        <img src="image/temp.jpg" class="responsive-Ilya">
-                        <br>
-                        Ашот Меликбекян<br>
-                        Директор тех. поддержки и Web-developer Studio 22<br>
-                        Студент 2-ого курса РТУ МИРЭА<br>
-                        <div class="slide">
-                            <label for="button-Ashot">
-                                Кнопка
-                            </label>
-                            <input type="checkbox" id="button-Ashot">
-                            <p class="content">Здесь подробная инфорамция о человеке</p>
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="carousel" data-gap="20" data-bfc="">
+                <figure style="transform-origin: 50% 50% -600.159px; transform: rotateY(0rad);">
+                <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="Ilya" style="padding: 20px; backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Ashot" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(0.785398rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="Nadya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(1.5708rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="Ilya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(2.35619rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Ashot" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(3.14159rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="Ilya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(3.92699rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Ashot" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(4.71239rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="Nadya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(5.49779rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                </figure>
+                <nav>
+                    <button class="nav prev">Prev</button>
+                    <button class="nav next">Next</button>
+                </nav>
             </div>
 
-           
+            <div id="Ilya-info" class="clean">
+                <h1>Илья Толоконов</h1>
+                <p>Креативный директор Studio 22</p>
+                <p>Студент 2-ого курса РТУ МИРЭА</p>
+            </div>
 
+            <div id="Ashot-info" class="clean">
+                <h1>Ашот Меликбекян</h1>
+                <p>Директор технической поддержки Studio 22</p>
+                <p>Студент 2-ого курса РТУ МИРЭА</p>
+            </div>
+
+            <div id="Nadya-info" class="clean">Nadya-info</div>
+            
+            <script src="about_us_carousel_1.js"></script>
+            <script src="about_us_carousel_2.js"></script>
+            <script src="about_us_container.js"></script>
+
+            <img src="image/Site.jpg" alt="img2" class="responsive">
+  
             <!--FOOTER-->
-            <footer class="footer">
-                <div class="container">
-                    <div class="social_nets" >
-                            <a href="https://vk.com/std_22"><img src="image/vk.png" height=40px width=40px></a>
-                            <a><img src="image/telegram.png" height=40px width=40px></a>
-                    </div>
-                    <div class="rights">
-                        <a>2020 © Studio 22. All rights reserved.</a>
-                    </div>
-
-                </div>
-                
-            </footer>
+            <div class="footer">
+                <div class="rights">
+                    <a>2020 © Studio 22. All rights reserved.</a>
+                </div>              
+            </div>
         </body>
     </html>

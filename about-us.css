@@ -1,48 +1,42 @@
-/*GENERAL*/
-a {
-    color: white;
-    text-decoration: none;
-}
-
-.responsive {
-    width: 100%;
-    margin: 0 1em 1em 0;
-}
-
-.info {
-    margin: 10px;
-}
-
-.short-info {
-    color: black;
-    font-size: 15px;
+html {
+    background: #fff;
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
 }
 
 /*HEADER*/
 header {  
-    background: #473FA8;   
+    background: #473FA8;
 }
 
-nav {
-    letter-spacing: 1px;
-    height: 50px;
-    color: #fff;
-    font-size: 30px;
-    border-spacing: 25px;
+nav{
+    max-height: 5px;
     display: inline-block;
-    margin-left: auto;
+}
+
+nav a:not(:last-child){
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 28px;
+    bottom: 15px;
+}
+
+.social_nets{
+    margin-left:10%;
+    margin-bottom:10%;
+    filter: grayscale(50%);
+}
+
+.social_nets:hover{
+    filter: grayscale(0%);
 }
 
 #header-menu {
     text-align: right;
-    margin: 15px;
+    margin: 5px;
 }
 
-.active {
-    border-bottom: 3px solid #fff;
-}
-
-.link-hover-center a {
+.link-hover-center a{
     display: inline-block;
     line-height: 1;
     text-decoration: none;
@@ -50,7 +44,7 @@ nav {
     position: relative;
 }
 
-.link-hover-center a:after {
+.link-hover-center a:not(:last-child):after {
     display: block;
     content: "";
     background-color: #fff;
@@ -73,73 +67,94 @@ nav {
 
 .logo {
     margin-top: 5px;
+    padding-left: 10px;
+}
+
+.active {
+    border-bottom: 3px solid #fff;
 }
 
 /*BODY*/
-.slide p,
-.slide [type="checkbox"]{
-    display:none;
-}
- 
-.slide [type="checkbox"]:checked ~ p {
-    display:block;
+
+body{
+    background-color: white;
 }
 
-.slide {
-    margin-top: 10px;
+.responsive {
+    width: 100%;
+    margin: 0 1em 1em 0;
 }
 
-label {
-    border: 2px solid black;
-    border-radius: 3px;
-    font-size: 14px; /* Размер текста */
-    padding: 5px 10px;
-    
+/*carousel*/
+.carousel {
+    padding: 20px;
+    -webkit-perspective: 500px;
+            perspective: 500px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
-
-
-.members {
-    margin-top: 5px;
-    background: blueviolet;
-    margin-bottom: 20px;
+.carousel > * {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
 }
 
-.Ilya {
-    float: left;
-    width: 47%;
-    color: black;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+.carousel figure {
+    margin: 0;
+    width: 40%;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    cursor: pointer; 
 }
 
-.responsive-Ilya {
-    width: 50%;
-    height: auto;
-    margin-left: 60px;
+.carousel figure img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0px;
 }
 
-.Ashot {
-    float: right;
-    width: 47%;
-    color: black;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-
+.carousel figure img:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.responsive-Ashot {
-    width: 50%;
-    height: auto;
+.carousel nav {
+    margin: 20px 0 0;
+}
+
+.carousel nav button {
+    margin: 0 5px;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: 1px solid;
+    letter-spacing: 1px;
+}
+
+/* Expanding image text */
+.clean{
+    display: none;
+    font-size: 30px;
 }
 
 /*FOOTER*/
-
-
 .footer {
-    height: 110px;
+    height: 40px;
     background: #473FA8;
     margin-left: auto;
     margin-right: auto;
@@ -150,21 +165,8 @@ label {
     right: 0;
 }
 
-.social_nets{
-    margin-top: 25px;
-}
-
-.social_nets a{
-    filter: grayscale(50%);
-
-}
-
-.social_nets a:hover{
-    filter: grayscale(0%);
-}
-
 .rights {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 a {
