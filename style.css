@@ -84,24 +84,20 @@ body {
     margin: 0 1em 1em 0;
 }
 
-.information{
+.information {  
+    display: grid;  
+    grid-gap: 10px;  
+    grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr));
+    justify-content: center;
     color: #80DDD9;
     font-family: 'Caveat', cursive;
     font-family: 'Comfortaa', cursive;
+    font-size: 23px;
 }
 
 h1{
-    font-size: 220%;
     text-align: center;
-}
-
-p{
-    font-size: 175%;
-    text-align: left;
-}
-
-#space{
-    color: #473FA8;
+    font-size: 30px;
 }
 
 /*FOOTER*/
