@@ -94,26 +94,26 @@ nav a:not(:last-child){
 #example-2 {
     background: url("image/Future-examples.png"); 
     background-size: 100% 100%;
-    color:black;
+    color: #80DDD9;
 }
 #example-3 {
     background: url("image/Future-examples.png"); 
     background-size: 100% 100%;
-    color:black;
+    color: #80DDD9;
  }
 #example-4 {
     background: url("image/Future-examples.png"); 
     background-size: 100% 100%;
-    color:black;
+    color: #80DDD9;
 }
 #example-5 {
     background: url("image/Future-examples.png"); 
     background-size: 100% 100%;
-    color:black;
+    color: #80DDD9;
 }
 #example-6 {
     background: url("image/Future-examples.png"); 
-    color:black;
+    color: #80DDD9;
     background-size: 100% 100%;
 }
 
@@ -146,14 +146,29 @@ nav a:not(:last-child){
   bottom: -250px;
 }
 
+.responsive{
+    width: 100%;
+    margin: 0 1em 1em 0;
+}
+
 /*FOOTER*/
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+.content {
+	padding-bottom: auto;
+}
+
 .footer {
     height: 40px;
     background: #473FA8;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;

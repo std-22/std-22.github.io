@@ -77,6 +77,7 @@ nav a:not(:last-child){
 /*body*/
 body {
     background-color:#473FA8 !important;
+    height: 100%;
 }
 
 .responsive{
@@ -90,7 +91,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr));
     justify-content: center;
     color: #80DDD9;
-    font-family: 'Caveat', cursive;
     font-family: 'Comfortaa', cursive;
     font-size: 23px;
 }
@@ -100,14 +100,95 @@ h1{
     font-size: 30px;
 }
 
+/*carousel*/
+.carousel {
+    padding: 20px;
+    -webkit-perspective: 500px;
+            perspective: 500px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.carousel > * {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
+.carousel figure {
+    margin: 0;
+    width: 40%;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    cursor: pointer; 
+}
+
+.carousel figure img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0px;
+}
+
+.carousel figure img:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.carousel nav {
+    margin: 10px 0 0;
+}
+
+.carousel nav button {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #80DDD9;
+    background: none;
+    border: 0px;
+    letter-spacing: 1px;
+}
+
+/* Expanding image text */
+.clean{
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    color: #80DDD9;
+}
+
 /*FOOTER*/
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+.content {
+	padding-bottom: 60px;
+}
+
 .footer {
     height: 40px;
     background: #473FA8;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
