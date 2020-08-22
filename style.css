@@ -103,8 +103,8 @@ body {
 
 .information {  
     display: grid;
-    margin: 0% 5% 2%;
-    column-gap: 5%;
+    margin: 0% 0% 2% 4%;
+    column-gap: 3%;
     grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr));
     color: #80DDD9;
     font-family: 'Comfortaa', cursive;
