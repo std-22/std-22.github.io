@@ -23,16 +23,16 @@
             <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa&display=swap" rel="stylesheet">
         </head>
+        
         <body>
-            <!--HEADER-->
-            <header>
-                <nav class="link-hover-center">
-                    <img src="image/logo_img.png" alt="logo" height=50px width=50px class="logo">    
-                    <a href="index.html" id="header-menu" class="active">Studio 22</a>
-                    <a href="portfolio.html" id="header-menu">Наши проекты</a>
-                    <a href="https://vk.com/std_22"><img src="image/vk.png" height=40px width=40px class="social_nets"></a>
-                </nav>
-            </header>
+            <!--NAVIGATION-->
+            <div class="menu">
+                <p><a href="index.html" id="header-menu">Studio 22</a></p>
+                <p><a href="portfolio.html" id="header-menu" class="active">Наши проекты</a></p>
+            </div>
+            <div class="menu__toggler"><span>   </span></div>
+
+            <script src="navicon.js"></script>
 
             <img src="image/about-us-2.png" alt="img1" class="responsive">
 
@@ -43,7 +43,7 @@
                     
                 <div>
                     <h1>Наша команда</h1>
-                    Мы всего лишь энтузиасты пытающиеся создать креативное пространство, именно поэтому чем нас больше, тем масштабней наши проекты.
+                    Мы всего лишь энтузиасты, пытающиеся создать креативное пространство, именно поэтому чем нас больше, тем масштабней наши проекты.
                 </div>
                     
                 <div>
@@ -58,12 +58,12 @@
 
                 <div>
                     <h1>Подразделения</h1>
-                    На данный момент сформировано лишь одно – IT-подразделение. С его проектами можно ознакомится на сайте студии во вкладке “Наши проекты”.
+                    На данный момент сформировано лишь одно – IT-подразделение. С его проектами можно ознакомиться на сайте студии во вкладке “Наши проекты”.
                 </div>
                 
                 <div>
                     <h1>Как связаться?</h1>
-                    Всё давольно просто, переходите в нашу группу ВК, которая закреплена в шапке сайта, где справа появится кнопка "написать сообщение".
+                    В разделе "Наши контакты" переходите по ссылке в группу ВК, на главной странице паблика справа будет кнопка "написать сообщение".
                 </div>
             </div>
 
@@ -90,26 +90,37 @@
                 <h1>Илья Толоконов</h1>
                 <p>Креативный директор Studio 22</p>
                 <p>Студент 2-ого курса РТУ МИРЭА</p>
-                <p>По спецмальности "Прикладная информатика"</p>
+                <p>По специальности "Прикладная информатика"</p>
             </div>
 
             <div id="Ashot-info" class="clean">
                 <h1>Ашот Меликбекян</h1>
                 <p>Директор технической поддержки Studio 22</p>
                 <p>Студент 2-ого курса РТУ МИРЭА</p>
-                <p>По спецмальности "Прикладная информатика"</p>
+                <p>По специальности "Прикладная информатика"</p>
             </div>
 
             <div id="Nadya-info" class="clean">
                 <h1>Надежда Солодова</h1>
                 <p>Глава безопасности Studio 22</p>
                 <p>Студентка 2-ого курса РТУ МИРЭА</p>
-                <p>По спецмальности "Прикладная информатика"</p>
+                <p>По специальности "Прикладная информатика"</p>
             </div>
             
             <script src="about_us_carousel_1.js"></script>
             <script src="about_us_carousel_2.js"></script>
             <script src="about_us_container.js"></script>
+
+            <!--CONTACTS-->
+            <div class="container">
+                <div class="contacts">
+                    <h>Наши контакты</h>
+                </div>
+                <div class="social_nets">
+                    <a href="https://vk.com/std_22"><img src="image/vk.png" height=40px width=40px></a>
+                    <a href="https://github.com/std-22"><img src="image/github.png" height=43px width=43px></a>
+                </div>
+            </div>
             
             <!--FOOTER-->
             <div class="wrapper">

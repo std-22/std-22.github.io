@@ -18,22 +18,19 @@
 
         <!--Подключение шрифтов-->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header>
-            <nav class="link-hover-center">
-                <img src="image/logo_img.png" alt="logo" height=50px width=50px class="logo">    
-                <a href="index.html" id="header-menu">Studio 22</a>
-                <a href="portfolio.html" id="header-menu" class="active">Наши проекты</a>
-                <a href="https://vk.com/std_22"><img src="image/vk.png" height=40px width=40px class="social_nets"></a>
-            </nav>
-        </header>
-
-
-        <div class="portfolio-theme-1">
-             <p>В разработке</p>
+        <!--NAVIGATION-->
+        <div class="menu">
+            <p><a href="index.html" id="header-menu">Studio 22</a></p>
+            <p><a href="portfolio.html" id="header-menu" class="active">Наши проекты</a></p>
         </div>
+        <div class="menu__toggler"><span>   </span></div>
+
+        <script src="navicon.js"></script>
+
         <div class="portfolio">
             <div class="example" id="example-1"><h2 class="title">Сайт портфолио</h2><h1></h1></div>  
             <div class="example" id="example-2"><h2 class="title">Что-то еще</h2></div>  
@@ -41,6 +38,17 @@
             <div class="example" id="example-4"><h2 class="title">Что-то еще</h2></div>  
             <div class="example" id="example-5"><h2 class="title">Что-то еще</h2></div>  
             <div class="example" id="example-6"><h2 class="title">Что-то еще</h2></div>  
+        </div>
+
+        <!--CONTACTS-->
+        <div class="container">
+            <div class="contacts">
+                <h>Наши контакты</h>
+            </div>
+            <div class="social_nets">
+                <a href="https://vk.com/std_22"><img src="image/vk.png" height=40px width=40px></a>
+                <a href="https://github.com/std-22"><img src="image/github.png" height=43px width=43px></a>
+            </div>
         </div>
 
         <img src="image/Site.jpg" alt="img2" class="responsive">
