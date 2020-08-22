@@ -102,10 +102,11 @@ body {
 }
 
 .information {  
-    display: grid;  
-    grid-gap: 10px;  
+    display: grid;
+    margin: 0% 5% 2%;
+    column-gap: 5%;
+    row-gap: 3%;
     grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr));
-    justify-content: center;
     color: #80DDD9;
     font-family: 'Comfortaa', cursive;
     font-size: 23px;
