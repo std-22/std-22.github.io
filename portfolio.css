@@ -89,7 +89,8 @@ html {
     color: #005c9c;
 }
 
-/*PORTFOLIO*/
+/*portfolio*/
+
 .portfolio {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -125,12 +126,15 @@ html {
     background: url("image/lin-alg-calc.png"); 
     background-size: 100% 100%;
 }
+
 #example-5 {
     background: url("image/in-process.png"); 
     background-size: 100% 100%;
 }
+
 #example-6 {
-    background: url("image/in-process.png"); 
+    background: url("image/Future-examples.png"); 
+    color: #80DDD9;
     background-size: 100% 100%;
 }
 
@@ -163,7 +167,6 @@ html {
     font-size: 24px;
     background-color: rgba(0, 0, 0, 0.575);
 }
-
 
 /*contacts*/
 
@@ -198,6 +201,11 @@ html {
 
 .content {
 	padding-bottom: auto;
+}
+
+.responsive{
+    width: 100%;
+    margin: 0 1em 1em 0;
 }
 
 .footer {
