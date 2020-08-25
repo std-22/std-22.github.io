@@ -22,62 +22,120 @@
             <!--Подключение шрифтов-->
             <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa&display=swap" rel="stylesheet">
+            
+            <!--Описание-->
+            <title>Studio 22 - креативное пространство. Гости превращаются в хозяев.</title>
+            <meta name="description" content="Studio 22 - открытая площадка для реализации идей и проектов, в которой каждый человек может попробовать воплотить свое детище в жизнь. Заходите к нам!">
+            <meta name="keywords" content="Studio 22, студия 22">
         </head>
+        
         <body>
-            <!--HEADER-->
-            <header>
-                <nav class="link-hover-center">
-                    <img src="image/logo_img.png" alt="logo" height=50px width=50px class="logo">    
-                    <a href="index.html" id="header-menu" class="active">Studio 22</a>
-                    <a href="about_us.html" id="header-menu">О нас</a>
-                    <a href="portfolio.html" id="header-menu">Наши проекты</a>
-                    <a href="https://vk.com/std_22"><img src="image/vk.png" height=40px width=40px class="social_nets"></a>
-                </nav>
-            </header>
+            <!--NAVIGATION-->
+            <div class="menu">
+                <p><a href="index.html" id="header-menu">Studio 22</a></p>
+                <p><a href="portfolio.html" id="header-menu" class="active">Наши проекты</a></p>
+            </div>
+            <div class="menu__toggler"><span>   </span></div>
+
+            <script src="navicon.js"></script>
 
             <img src="image/about-us-2.png" alt="img1" class="responsive">
 
             <div class="information">
-                <div class="information1" style="float: left; width: 100%">
-                    <div id="space" class="firstBlock" style="float: left; width: 7%;">i</div>
-                    <div class="firstBlock" style="float: left; width: 24%;">
-                        <h1>Studio 22</h1>
-                        <p>Studio 22 - это открытая площадка для реализации идей и проектов, в которой каждый человек может попробовать воплотить свое детище в жизнь.</p>
-                    </div>
-                    <div id="space" class="firstBlock" style="float: left; width: 7%;">i</div>
-                    <div class="firstBlock" style="float: left; width: 24%;">
-                        <h1>Наша команда</h1>
-                        <p> Мы всего лишь энтузиасты пытающиеся создать что-то прекрасное, именно поэтому чем нас больше, тем масштабней наши проекты</p>
-                    </div>
-                    <div id="space" class="firstBlock" style="float: left; width: 7%;">i</div>
-                    <div class="firstBlock" style="float: left; width: 24%;">
-                        <h1>Требования</h1>
-                        <p> Человек может прийти к нам без каких-либо идей, но с желанием в глазах сделать что-то крутое и принести этим пользу.</p>
-                    </div>
-                    <div id="space" class="firstBlock" style="float: left; width: 7%;">i</div>
+                <div>
+                    <h1>Studio 22</h1> Studio 22 - это открытая площадка для реализации идей и проектов, в которой каждый человек может попробовать воплотить свое детище в жизнь.
                 </div>
-                <div class="information2" style="float: left; width: 100%">
-                    <div id="space" class="secondBlock" style="float: left; width: 7%;">i</div>
-                    <div class="secondBlock" style="float: left; width: 38%;">
-                        <h1>Наш вектор</h1>
-                        <p>Cтудия является примером партисипативного управления, который подразумевает добровольный вклад каждого и полноценное участие в управлении проектом</p>
-                    </div>
-                    <div id="space" class="secondBlock" style="float: left; width: 7%;">i</div>
-                    <div class="secondBlock" style="float: left; width: 38%;">
-                        <h1>Подразделения</h1>
-                        <p>На данный момент сформировано лишь одно – IT-подразделение. С его проектами можно ознакомится на сайте студии во вкладке “Наши проекты”.</a></p>
-                    </div>
-                    <div id="space" class="secondBlock" style="float: left; width: 7%;">i</div>
+                    
+                <div>
+                    <h1>Наша команда</h1>
+                    Мы всего лишь энтузиасты, пытающиеся создать креативное пространство, именно поэтому чем нас больше, тем масштабней наши проекты.
+                </div>
+                    
+                <div>
+                    <h1>Требования</h1>
+                    Нам нужны люди с желанием в глазах сделать что-нибудь действительно потрясающее и принести этим пользу.
+                </div>
+
+                <div>
+                    <h1>Наш вектор</h1>
+                    Cтудия является примером партисипативного управления, который подразумевает добровольный вклад каждого и полноценное участие в управлении проектом.
+                </div>
+
+                <div>
+                    <h1>Подразделения</h1>
+                    На данный момент сформировано лишь одно – IT-подразделение. С его проектами можно ознакомиться на сайте студии во вкладке “Наши проекты”.
+                </div>
+                
+                <div>
+                    <h1>Как связаться?</h1>
+                    В разделе "Наши контакты" переходите по ссылке в группу ВК, на главной странице паблика справа будет кнопка "написать сообщение".
+                </div>
+            </div>
+
+            <!--CAROUSEL-->
+
+            <div class="carousel" data-gap="20" data-bfc="">
+                <figure style="transform-origin: 50% 50% -600.159px; transform: rotateY(0rad);">
+                <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="Ilya" style="padding: 20px; backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Ashot" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(0.785398rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="Nadya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(1.5708rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="Ilya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(2.35619rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Ashot" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(3.14159rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="Ilya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(3.92699rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Ashot" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(4.71239rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                    <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="Nadya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(5.49779rad); backface-visibility: hidden;" onclick="myFunction(this);">
+                </figure>
+                <nav>
+                    <button class="nav prev">Prev</button>
+                    <button class="nav next">Next</button>
+                </nav>
+            </div>
+
+            <div id="Ilya-info" class="clean">
+                <h1>Илья Толоконов</h1>
+                <p>Креативный директор Studio 22</p>
+                <p>Студент 2-ого курса РТУ МИРЭА</p>
+                <p>По специальности "Прикладная информатика"</p>
+            </div>
+
+            <div id="Ashot-info" class="clean">
+                <h1>Ашот Меликбекян</h1>
+                <p>Директор технической поддержки Studio 22</p>
+                <p>Студент 2-ого курса РТУ МИРЭА</p>
+                <p>По специальности "Прикладная информатика"</p>
+            </div>
+
+            <div id="Nadya-info" class="clean">
+                <h1>Надежда Солодова</h1>
+                <p>Глава безопасности Studio 22</p>
+                <p>Студентка 2-ого курса РТУ МИРЭА</p>
+                <p>По специальности "Прикладная информатика"</p>
+            </div>
+            
+            <script src="about_us_carousel_1.js"></script>
+            <script src="about_us_carousel_2.js"></script>
+            <script src="about_us_container.js"></script>
+
+            <!--CONTACTS-->
+            <div class="container">
+                <div class="contacts">
+                    <h>Наши контакты</h>
+                </div>
+                <div class="social_nets">
+                    <a href="https://vk.com/std_22"><img src="image/vk.png" height=40px width=40px></a>
+                    <a href="https://github.com/std-22"><img src="image/github.png" height=43px width=43px></a>
                 </div>
             </div>
             
-            <img src="image/Site.jpg" alt="img2" class="responsive">
-            
             <!--FOOTER-->
-            <div class="footer">
-                <div class="rights">
-                    <a>2020 © Studio 22. All rights reserved.</a>
-                </div>              
+            <div class="wrapper">
+                <div class="content"></div>
+
+                <div class="footer">
+                    <div class="rights">
+                        <a>2020 © Studio 22. All rights reserved.</a>
+                    </div>              
+                </div>
             </div>
         </body>
 
