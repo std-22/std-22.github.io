@@ -92,14 +92,14 @@ html {
 /*portfolio*/
 
 .portfolio {
-    display: grid;  
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-template-rows: repeat(2, 200px);     
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 200px);
 }
 
 .portfolio-theme-1 > p {
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     color: #80DDD9;
 }
 
@@ -108,25 +108,30 @@ html {
    background-size: 100% 100%;
 }
 #example-2 {
-    background: url("image/Future-examples.png"); 
+    background: url("image/in-process.png"); 
     background-size: 100% 100%;
-    color: #80DDD9;
 }
 #example-3 {
-    background: url("image/Future-examples.png"); 
+    background: url("image/in-process.png"); 
     background-size: 100% 100%;
-    color: #80DDD9;
  }
+
+.portfolio-theme-2 > p {
+    text-align: center;
+    font-size: 24px;
+    color: #80DDD9;
+}
+
 #example-4 {
-    background: url("image/Future-examples.png"); 
+    background: url("image/lin-alg-calc.png"); 
     background-size: 100% 100%;
-    color: #80DDD9;
 }
+
 #example-5 {
-    background: url("image/Future-examples.png"); 
+    background: url("image/in-process.png"); 
     background-size: 100% 100%;
-    color: #80DDD9;
 }
+
 #example-6 {
     background: url("image/Future-examples.png"); 
     color: #80DDD9;
@@ -141,30 +146,26 @@ html {
     overflow: hidden;
 }
 
-.example .title{
+.example .title {
     font-size: 16pt;
-    line-height: 1.2em;
-    height: 4.8em;
+    line-height: 2em;
+    height: 9em;
     width: 100%;
     text-align: center;
-    position: relative;
+    position: absolute;
     font-size: 10pt;
     overflow: hidden;
 }
 
+.title {
+  bottom: -200px;
+}
+
 .example:hover .title{
-    -webkit-transition: all 0.4s cubic-bezier(0,0,0.58,1);
-    bottom: 0px;
+    -webkit-transition: all 0.4s cubic-bezier(0,0,0.38,1);
+    bottom: -20px;
     font-size: 24px;
-}
-
-.title{
-  bottom: -250px;
-}
-
-.responsive{
-    width: 100%;
-    margin: 0 1em 1em 0;
+    background-color: rgba(0, 0, 0, 0.575);
 }
 
 /*contacts*/
@@ -200,6 +201,11 @@ html {
 
 .content {
 	padding-bottom: auto;
+}
+
+.responsive{
+    width: 100%;
+    margin: 0 1em 1em 0;
 }
 
 .footer {
