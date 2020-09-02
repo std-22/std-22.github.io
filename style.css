@@ -27,7 +27,6 @@ html {
     background: #fafafa;
     border-radius: 20px;
     transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
-
 }
 
 .menu__toggler span::before {
@@ -94,6 +93,7 @@ html {
 body {
     background-color:#473FA8 !important;
     height: 100%;
+    overflow: hidden;
 }
 
 .responsive{
@@ -124,99 +124,169 @@ h1{
 
 /*carousel*/
 
-.carousel {
-    padding: 20px;
-    -webkit-perspective: 500px;
-            perspective: 500px;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+.slider {
+  position: relative;
+  height: 100vh;
 }
 
-.carousel > * {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+.slider__slides {
+  z-index: 1;
+  position: relative;
+  height: 100%;
 }
 
-.carousel figure {
-    margin: 0;
-    width: 40%;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-    cursor: pointer; 
+.slider__control {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  margin-left: -35px;
+  margin-top: -30px;
+  border-radius: 50%;
+  background: #fff;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 
-.carousel figure img {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 0px;
+.slider__control--right {
+  left: 95%;
 }
 
-.carousel figure img:not(:first-of-type) {
-    position: absolute;
-    left: 0;
-    top: 0;
+.slider__control:hover {
+  background-color: #2da6ff;
 }
 
-.carousel nav {
-    margin: 10px 0 0;
+.slider__control-line {
+  position: absolute;
+  left: 23px;
+  top: 50%;
+  width: 3px;
+  height: 14px;
+  transform-origin: 50% 0;
+  transform: rotate(-45deg);
 }
 
-.carousel nav button {
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: 25px;
-    color: #80DDD9;
-    background: none;
-    border: 0px;
-    letter-spacing: 1px;
+.slider__control-line:nth-child(2) {
+  transform: translateY(1px) rotate(-135deg);
 }
 
-/* Expanding image text */
+.slider__control--right .slider__control-line {
+  left: 37px;
+  transform-origin: 1px 0;
+  transform: rotate(45deg);
+}
 
-.clean{
-    display: none;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Comfortaa', cursive;
-    color: #80DDD9;
+.slider__control--right .slider__control-line:nth-child(2) {
+  transform: translateY(1px) rotate(135deg);
+}
+
+.slider__control-line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e2e2;
+  transition: background-color 0.3s;
+}
+
+.slider__control:hover .slider__control-line:after {
+  background-color: #fff;
+}
+
+.slider__control.a--rotation .slider__control-line:after {
+  animation: arrowLineRotation 0.49s;
+}
+
+@keyframes arrowLineRotation {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes arrowLineRotationRev {
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+.slide {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150;
+  height: 150;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: clip-path 0s 0.91s;
+  clip-path: circle(30px at 0vw 50%);
+}
+
+.slide.s--active {
+  z-index: 1;
+  transition: clip-path 1.3s;
+  clip-path: circle(120vmax at 30vw 50%);
+}
+
+.slide:nth-child(1) .slide__inner {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg");
+}
+
+.slide:nth-child(2) .slide__inner {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg");
+}
+
+.slide:nth-child(3) .slide__inner {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg");
+}
+
+.slide__inner {
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -50vw;
+  margin-top: -50vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide__inner:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /*contacts*/
 
 .container{
-    display: block;
-    text-align: center;
+  margin: 5px;
+  display: block;
+  text-align: center;
 }
 
 .contacts h{
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Comfortaa', cursive;
-    color: #80DDD9;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  color: #80DDD9;
 }
 
 .social_nets a{
-    margin: 3px;
-    padding-top: 10px;
-    filter: grayscale(50%);
+  margin: 3px;
+  padding-top: 10px;
+  filter: grayscale(50%);
 }
 
 .social_nets a:hover{
-    filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 /*footer*/
