@@ -48,12 +48,12 @@
                     
                 <div>
                     <h1>Наша команда</h1>
-                    Мы всего лишь энтузиасты, пытающиеся создать креативное пространство, именно поэтому чем нас больше, тем масштабней наши проекты.
+                    Мы всего лишь энтузиасты, пытающиеся создать что-нибудь действительно потрясающее, именно поэтому чем нас больше, тем масштабней наши проекты.
                 </div>
                     
                 <div>
                     <h1>Требования</h1>
-                    Нам нужны люди с желанием в глазах сделать что-нибудь действительно потрясающее и принести этим пользу.
+                    Нам нужны люди с огнём в глазах, готовые учиться чему-то новому, применять полученные знания в жизни и приносить этим пользу.
                 </div>
 
                 <div>
@@ -63,7 +63,7 @@
 
                 <div>
                     <h1>Подразделения</h1>
-                    На данный момент сформировано лишь одно – IT-подразделение. С его проектами можно ознакомиться на сайте студии во вкладке “Наши проекты”.
+                    На данный момент сформировано лишь одно – IT-подразделение. С его проектами можно ознакомиться на сайте студии во вкладке "Наши проекты".
                 </div>
                 
                 <div>
@@ -72,49 +72,39 @@
                 </div>
             </div>
 
+            <div class="information">
+                <h1>НЕМНОГО О НАС</h1>
+            </div>
+
             <!--CAROUSEL-->
-
-            <div class="carousel" data-gap="20" data-bfc="">
-                <figure style="transform-origin: 50% 50% -600.159px; transform: rotateY(0rad);">
-                <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="Ilya" style="padding: 20px; backface-visibility: hidden;" onclick="myFunction(this);">
-                    <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Ashot" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(0.785398rad); backface-visibility: hidden;" onclick="myFunction(this);">
-                    <img src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="Nadya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(1.5708rad); backface-visibility: hidden;" onclick="myFunction(this);">
-                    <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="Ilya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(2.35619rad); backface-visibility: hidden;" onclick="myFunction(this);">
-                    <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Ashot" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(3.14159rad); backface-visibility: hidden;" onclick="myFunction(this);">
-                    <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="Ilya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(3.92699rad); backface-visibility: hidden;" onclick="myFunction(this);">
-                    <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Ashot" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(4.71239rad); backface-visibility: hidden;" onclick="myFunction(this);">
-                    <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="Nadya" style="padding: 20px; transform-origin: 50% 50% -600.159px; transform: rotateY(5.49779rad); backface-visibility: hidden;" onclick="myFunction(this);">
-                </figure>
-                <nav>
-                    <button class="nav prev">Prev</button>
-                    <button class="nav next">Next</button>
-                </nav>
+            <div class="slider">
+                <!--SLIDES-->
+                <div class="slider__slides">
+                  <div class="slide s--active">
+                    <div class="slide__inner">
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="slide__inner">
+                    </div>
+                  </div>
+                  <div class="slide s--prev">
+                    <div class="slide__inner">
+                    </div>
+                  </div>
+                </div>
+                <!--SLIDES CONTROL-->
+                <div class="slider__control">
+                  <div class="slider__control-line"></div>
+                  <div class="slider__control-line"></div>
+                </div>
+                <div class="slider__control slider__control--right m--right">
+                  <div class="slider__control-line"></div>
+                  <div class="slider__control-line"></div>
+                </div>
             </div>
 
-            <div id="Ilya-info" class="clean">
-                <h1>Илья Толоконов</h1>
-                <p>Креативный директор Studio 22</p>
-                <p>Студент 2-ого курса РТУ МИРЭА</p>
-                <p>По специальности "Прикладная информатика"</p>
-            </div>
-
-            <div id="Ashot-info" class="clean">
-                <h1>Ашот Меликбекян</h1>
-                <p>Директор технической поддержки Studio 22</p>
-                <p>Студент 2-ого курса РТУ МИРЭА</p>
-                <p>По специальности "Прикладная информатика"</p>
-            </div>
-
-            <div id="Nadya-info" class="clean">
-                <h1>Надежда Солодова</h1>
-                <p>Глава безопасности Studio 22</p>
-                <p>Студентка 2-ого курса РТУ МИРЭА</p>
-                <p>По специальности "Прикладная информатика"</p>
-            </div>
-            
-            <script src="about_us_carousel_1.js"></script>
-            <script src="about_us_carousel_2.js"></script>
-            <script src="about_us_container.js"></script>
+            <script src="carousel.js"></script>
 
             <!--CONTACTS-->
             <div class="container">
