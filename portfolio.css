@@ -98,6 +98,7 @@ html {
 }
 
 .portfolio-theme-1 > p {
+    margin: 0px;
     text-align: center;
     font-size: 24px;
     color: #80DDD9;
@@ -134,7 +135,6 @@ html {
 
 #example-6 {
     background: url("image/Future-examples.png"); 
-    color: #80DDD9;
     background-size: 100% 100%;
 }
 
