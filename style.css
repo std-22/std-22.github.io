@@ -4,7 +4,41 @@ html {
     margin-right: calc(-1 * (100vw - 100%));
 }
 
-/*navicon*/
+/* scrollbar */
+
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:5px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar-track {
+  background-color:#ecedee
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color:#c70f7a;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: #c70f7a;
+  }
+  
+  ::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar{
+  width: 4px;
+  }
+
+/* navicon */
 
 .menu__toggler {
     position: fixed;
@@ -54,7 +88,7 @@ html {
     transform: rotate(225deg);
 }
 
-/*menu panel*/
+/* menu panel */
 
 .menu {
     position: fixed;
@@ -71,7 +105,7 @@ html {
     transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1160px) {
     .menu {
         left: -100%;
         width: 250px;
@@ -88,7 +122,7 @@ html {
     color: #005c9c;
 }
 
-/*body*/
+/* body */
 
 body {
     background-color:#473FA8 !important;
@@ -122,28 +156,21 @@ h1{
     font-size: 30px;
 }
 
-/*carousel*/
+/* carousel */
 
 .slider {
   position: relative;
-  height: 100vh;
-}
-
-.slider__slides {
-  z-index: 1;
-  position: relative;
-  height: 100%;
+  height: 50vw;
 }
 
 .slider__control {
   z-index: 2;
   position: absolute;
-  top: 50%;
   left: 5%;
+  top: 50%;
   width: 60px;
   height: 60px;
   margin-left: -35px;
-  margin-top: -30px;
   border-radius: 50%;
   background: #fff;
   transition: background-color 0.3s;
@@ -151,7 +178,7 @@ h1{
 }
 
 .slider__control--right {
-  left: 95%;
+  left: 97%;
 }
 
 .slider__control:hover {
@@ -160,8 +187,8 @@ h1{
 
 .slider__control-line {
   position: absolute;
-  left: 23px;
   top: 50%;
+  left: 23px;
   width: 3px;
   height: 14px;
   transform-origin: 50% 0;
@@ -174,7 +201,7 @@ h1{
 
 .slider__control--right .slider__control-line {
   left: 37px;
-  transform-origin: 1px 0;
+  transform-origin: 50% 0;
   transform: rotate(45deg);
 }
 
@@ -185,8 +212,6 @@ h1{
 .slider__control-line:after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: #e2e2e2;
@@ -201,6 +226,36 @@ h1{
   animation: arrowLineRotation 0.49s;
 }
 
+/* media */
+
+@media (max-width: 600px){
+  
+  .slider__control {
+    left: 30%;
+    width: 10%;
+    height: 20%;
+    margin-left: -22%;
+  }
+  
+  .slider__control--right {
+    left: 105%;
+  }
+  
+  .slider__control-line {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 3px;
+    height: 14px;
+  }
+  
+  .slider__control--right .slider__control-line {
+    left: 65%;
+  }
+}
+
+/* keyframes */
+
 @keyframes arrowLineRotation {
   to {
     transform: rotate(180deg);
@@ -214,21 +269,21 @@ h1{
 }
 
 .slide {
+  display: block;
   position: absolute;
   left: 50%;
-  top: 50%;
-  width: 150;
-  height: 150;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%);
   border-radius: 50%;
   transition: clip-path 0s 0.91s;
-  clip-path: circle(30px at 0vw 50%);
+  clip-path: circle(30px at center);
 }
 
 .slide.s--active {
   z-index: 1;
   transition: clip-path 1.3s;
-  clip-path: circle(120vmax at 30vw 50%);
+  clip-path: circle(120vmax at center);
 }
 
 .slide:nth-child(1) .slide__inner {
@@ -244,27 +299,15 @@ h1{
 }
 
 .slide__inner {
+  display: block;
   position: absolute;
-  top: 50%;
-  width: 100vw;
-  height: 100vh;
-  margin-left: -50vw;
-  margin-top: -50vh;
+  width: 100%;
+  height: inherit;
   background-size: cover;
   background-position: center center;
 }
 
-.slide__inner:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-/*contacts*/
+/* contacts */
 
 .container{
   margin: 5px;
@@ -289,7 +332,7 @@ h1{
   filter: grayscale(0%);
 }
 
-/*footer*/
+/* footer */
 
 .wrapper {
 	position: relative;
