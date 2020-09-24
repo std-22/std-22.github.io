@@ -7,36 +7,36 @@ html {
 /* scrollbar */
 
 ::-webkit-scrollbar-button {
-  background-image:url('');
-  background-repeat:no-repeat;
-  width:5px;
-  height:0px
-  }
-  
-  ::-webkit-scrollbar-track {
-  background-color:#ecedee
-  }
-  
-  ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-  background-color:#c70f7a;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover{
-    background-color: #c70f7a;
-  }
-  
-  ::-webkit-resizer{
-  background-image:url('');
-  background-repeat:no-repeat;
-  width:4px;
-  height:0px
-  }
-  
-  ::-webkit-scrollbar{
-  width: 4px;
-  }
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar-track {
+    background-color:#ecedee
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color:#c70f7a;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover{
+      background-color: #c70f7a;
+    }
+    
+    ::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar{
+    width: 4px;
+    }
 
 /*navicon*/
 
@@ -123,6 +123,29 @@ html {
     color: #005c9c;
 }
 
+/* text */
+
+.information {  
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    column-gap: 5%;
+    color: #80DDD9;
+    font-family: 'Comfortaa', cursive;
+    font-size: 23px;
+    justify-content: center;
+}
+
+.information div{
+    padding: 3% 0%;
+    justify-self: end;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
 /*portfolio*/
 
 .portfolio {
@@ -132,9 +155,10 @@ html {
 }
 
 .portfolio-theme-1 > p {
-    margin: 0px;
+    font-family: 'Comfortaa', cursive;
+    margin: 10px;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     color: #80DDD9;
 }
 
@@ -152,14 +176,15 @@ html {
  }
 
 .portfolio-theme-2 > p {
+    font-family: 'Comfortaa', cursive;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     color: #80DDD9;
 }
 
 #example-4 {
-    background: url("image/lin-alg-calc.png"); 
-    background-size: 100% 100%;
+    background: url("image/l2.png"); 
+    background-size: 100% 200%;
 }
 
 #example-5 {
