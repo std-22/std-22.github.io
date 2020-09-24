@@ -234,11 +234,11 @@ h1{
     left: 30%;
     width: 10%;
     height: 20%;
-    margin-left: -22%;
+    margin-left: -26%;
   }
   
   .slider__control--right {
-    left: 105%;
+    left: 110%;
   }
   
   .slider__control-line {
@@ -287,7 +287,7 @@ h1{
 }
 
 .slide:nth-child(1) .slide__inner {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg");
+  background-image: url("image/Илья.jpg");
 }
 
 .slide:nth-child(2) .slide__inner {
