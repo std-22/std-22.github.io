@@ -125,7 +125,7 @@ html {
 /* body */
 
 body {
-    background-color:#473FA8 !important;
+    background-color: #473FA8 !important; /*new color #204661 */
     height: 100%;
     overflow: hidden;
 }
@@ -145,6 +145,7 @@ body {
     font-size: 23px;
     justify-content: center;
 }
+
 
 .information div{
     padding: 3% 0%;
@@ -325,11 +326,11 @@ h1{
 .social_nets a{
   margin: 3px;
   padding-top: 10px;
-  filter: grayscale(50%);
+  filter: grayscale(0%);
 }
 
 .social_nets a:hover{
-  filter: grayscale(0%);
+  filter: grayscale(80%);
 }
 
 /* footer */
@@ -360,6 +361,6 @@ h1{
 }
 
 a {
-    color: white;
+    color: #80DDD9;
     text-decoration: none;
 }
