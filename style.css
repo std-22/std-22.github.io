@@ -152,6 +152,10 @@ body {
     justify-self: end;
 }
 
+.information div a{
+  text-decoration: underline;
+}
+
 h1{
     text-align: center;
     font-size: 30px;
@@ -308,31 +312,6 @@ h1{
   background-position: center center;
 }
 
-/* contacts */
-
-.container{
-  margin: 5px;
-  display: block;
-  text-align: center;
-}
-
-.contacts h{
-  font-size: 30px;
-  text-align: center;
-  font-family: 'Comfortaa', cursive;
-  color: #80DDD9;
-}
-
-.social_nets a{
-  margin: 3px;
-  padding-top: 10px;
-  filter: grayscale(0%);
-}
-
-.social_nets a:hover{
-  filter: grayscale(80%);
-}
-
 /* footer */
 
 .wrapper {
@@ -341,11 +320,11 @@ h1{
 }
 
 .content {
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .footer {
-    height: 40px;
+    height: 30px;
     background: #473FA8;
     margin-left: auto;
     margin-right: auto;
@@ -357,7 +336,7 @@ h1{
 }
 
 .rights {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 a {
