@@ -7,7 +7,7 @@
             <!--Мета тег для Вебмастера Яндекса-->
             <meta name="yandex-verification" content="b2b6f97e190441da" />
 
-            <!--мобильная адаптация-->
+            <!--Мобильная адаптация-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             
             <meta charset="UTF-8">
@@ -30,10 +30,12 @@
         </head>
         
         <body>
-            <!--NAVIGATION-->
+            <!--Навигация-->
             <div class="menu">
                 <p><a href="index.html" id="header-menu">Studio 22</a></p>
-                <p><a href="portfolio.html" id="header-menu" class="active">В разработке</a></p>
+                <p><a href="site.html" id="header-menu" class="active">Web development</a></p>
+                <p><a href="mobile.html" id="header-menu" class="active">Mobile development</a></p>
+                <p><a href="app.html" id="header-menu" class="active">Application development</a></p>
             </div>
             <div class="menu__toggler"><span>   </span></div>
 
@@ -87,13 +89,24 @@
                 </div>
             </div>
 
-            <div class="information">
-                <h1>НЕМНОГО О НАС</h1>
+            <div class="info_header">
+                <h1>Наши проекты</h1>
             </div>
 
-            <!--CAROUSEL-->
+            <div class="portfolio">
+                <div class="example" id="example-1"><h2 class="title"><br/><br/><a href="site.html">Сайт-портфолио</a></h2><h1></h1></div>
+                <div class="example" id="example-2"><h2 class="title"><br/><br/><a href="mobile.html">Lama</a></h2></div> 
+                <div class="example" id="example-3"><h2 class="title"><br/><br/><a href="app.html">Spotify Music Advisor</a></h2></div>
+            </div>
+
+            <br></br>
+            <div class="info_header">
+                <h1>Немного о нас</h1>
+            </div>
+
+            <!--Карусель-->
             <div class="slider">
-                <!--SLIDES-->
+                <!--Слайды-->
                 <div class="slider__slides">
                   <div class="slide s--active">
                     <div class="slide__inner">
@@ -108,7 +121,7 @@
                     </div>
                   </div>
                 </div>
-                <!--SLIDES CONTROL-->
+                <!--Контроллер слайдов-->
                 <div class="slider__control">
                   <div class="slider__control-line"></div>
                   <div class="slider__control-line"></div>
@@ -121,7 +134,7 @@
 
             <script src="carousel.js"></script>
             
-            <!--FOOTER-->
+            <!--Футер-->
             <div class="wrapper">
                 <div class="content"></div>
 
@@ -132,5 +145,4 @@
                 </div>
             </div>
         </body>
-
     </html>
