@@ -122,24 +122,6 @@ html {
       color: #473FA8;
   }
 
-/* information */
-
-.responsive{
-    width: 800px;
-    height: 350px;
-    float: left;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.information p{
-    font-family: 'Comfortaa', cursive;
-    margin-right: 5%;
-    text-align: justify;
-    font-size: 30px;
-    color: #80DDD9;
-}
-
 /* contacts */
 
 .container{
