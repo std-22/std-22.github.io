@@ -147,6 +147,14 @@ body {
     justify-content: center;
 }
 
+/* media */
+
+@media only screen and (max-width: 1100px){
+  .information{
+    row-gap: 0;
+  }
+}
+
 
 .information div{
     padding: 3% 0%;
@@ -180,6 +188,14 @@ h1{
   justify-self: center;
   column-gap: 10%;
   row-gap: 15%;
+}
+
+/* media */
+
+@media only screen and (max-width: 1100px){
+  .portfolio{
+    row-gap: 5%;
+  }
 }
 
 #example-1 {
