@@ -1,0 +1,2 @@
+User-agent: Yandex
+sitemap: https://github.com/tolokonov/std-22.github.io/blob/master/Sitemap.xml
