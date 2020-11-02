@@ -1,5 +1,5 @@
 html {
-    background: #473FA8;
+    background: #211c37;
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
 }
@@ -12,21 +12,21 @@ html {
     width:5px;
     height:0px
     }
-    
+
     ::-webkit-scrollbar-track {
-    background-color:#ecedee
+    background-color:#9efff5
     }
-    
+
     ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 0px;
     border-radius: 0px;
-    background-color:#c70f7a;
+    background-color:#fff;
     }
-    
+
     ::-webkit-scrollbar-thumb:hover{
-      background-color: #f3101b;
+      background-color: #ded;
     }
-    
+
     ::-webkit-resizer{
     background-image:url('');
     background-repeat:no-repeat;
@@ -52,44 +52,44 @@ html {
       display: flex;
       align-items: center;
   }
-  
+
   .menu__toggler span, .menu__toggler span::before, .menu__toggler span::after {
       position: absolute;
       content: '';
       width: 28px;
       height: 2.5px;
-      background: #fafafa;
+      background: #9efff5;
       border-radius: 20px;
       transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
   }
-  
+
   .menu__toggler span::before {
       top: -8px;
   }
-  
+
   .menu__toggler span::after {
       top: 8px;
   }
-  
+
   .menu__toggler.active > span {
       background: transparent;
   }
-  
+
   .menu__toggler.active > span::before, .menu__toggler.active > span::after {
-      background: #473FA8;
+      background: #211c37;
       top: 0px;
   }
-  
+
   .menu__toggler.active > span::before {
       transform: rotate(-225deg);
   }
-  
+
   .menu__toggler.active > span::after {
       transform: rotate(225deg);
   }
-  
+
   /* menu panel */
-  
+
   .menu {
       position: fixed;
       left: -100%;
@@ -104,7 +104,7 @@ html {
       flex-direction: column;
       transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
   }
-  
+
   @media only screen and (max-width: 1160px) {
       .menu {
           left: -100%;
@@ -112,14 +112,14 @@ html {
           padding: 50px;
       }
   }
-  
+
   .menu.active {
       left: 0;
   }
-  
+
   .menu p a{
       font-size: 1.8rem;
-      color: #473FA8;
+      color: #211c37;
   }
 
 /* contacts */
@@ -129,13 +129,13 @@ html {
     display: block;
     text-align: center;
   }
-  
+
   .social_nets a{
     margin: 3px;
     padding-top: 10px;
     filter: grayscale(0%);
   }
-  
+
   .social_nets a:hover{
     filter: grayscale(80%);
   }
@@ -153,7 +153,7 @@ html {
 
 .footer {
     height: 40px;
-    background: #473FA8;
+    background: #211c37;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -168,6 +168,6 @@ html {
 }
 
 a {
-    color: #80DDD9;
+    color: #9efff5;
     text-decoration: none;
 }
