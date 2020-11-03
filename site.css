@@ -159,7 +159,7 @@ html {
 @media (max-width: 700px){
     .information{
         display: block;
-        padding: auto;
+        padding: 0%;
     }
 
     .responsive{
@@ -201,17 +201,20 @@ html {
 }
 
 @media (max-width: 700px){
+    .boxes{
+        padding-top: 10%;
+        float: center;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .boxes p{
-        margin-right: 13%;
-        margin-left: -15%;
         font-size: 28px;
     }
 
     label{
-        width: 50%;
         font-size: 18px;
-        margin-left: 25%;
-        margin-right: 25%;
         padding: 0px;
     }
 }
