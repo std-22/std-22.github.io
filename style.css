@@ -95,7 +95,7 @@ html {
     left: -100%;
     z-index: 998;
     font-family: 'Comfortaa', cursive;
-    background: rgba(250, 250, 250, 0.7);
+    background: rgba(250, 250, 250, 0.97);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     width: 15%;
     height: 100%;
@@ -147,10 +147,26 @@ body {
     justify-content: center;
 }
 
+.information_1 {
+  display: grid;
+  margin: 5% 3% 10% 3%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
+  row-gap: 6%;
+  column-gap: 8%;
+  color: #9efff5;
+  font-family: 'Comfortaa', cursive;
+  font-size: 23px;
+  justify-content: center;
+}
+
 /* media */
 
 @media only screen and (max-width: 1260px){
   .information{
+    margin: 0% 3% 10% 3%;
+    row-gap: 0;
+  }
+  .information_1{
     row-gap: 0;
   }
 }
@@ -182,7 +198,7 @@ h1{
 .portfolio {
   display: grid;
   margin: 3% 10% 5% 10%;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
   grid-auto-rows: 200px;
   justify-content: center;
   justify-self: center;
@@ -194,6 +210,7 @@ h1{
 
 @media only screen and (max-width: 1260px){
   .portfolio{
+    margin: 5% 5% 5% 5%;
     row-gap: 5%;
   }
 }
