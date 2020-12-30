@@ -149,7 +149,7 @@ body {
 
 .information_1 {
   display: grid;
-  margin: 5% 3% 10% 3%;
+  margin: 3% 3% 10% 3%;
   grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
   row-gap: 6%;
   column-gap: 8%;
