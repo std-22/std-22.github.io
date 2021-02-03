@@ -136,7 +136,16 @@ html {
     float: left;
     padding: 90px;
     margin-left: 70px;
+    animation: show 2s;
 }
+
+/* animation */
+
+@keyframes show {
+    from {opacity: 0;} to {opacity: 1;}
+    from {transform: scale(0) rotate(-45deg);} to {transform: scale(1) rotate(0deg);}
+}
+
 
 /* media */
 
