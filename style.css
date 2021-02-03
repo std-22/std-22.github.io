@@ -222,7 +222,7 @@ h1{
 }
 
 #example-2 {
-  background: url("image/l2.jpg");
+  background: url("image/lama.png");
   background-size: 100% 100%;
 
 }
@@ -279,154 +279,207 @@ h1{
   background-color: rgba(226, 226, 226, 0.6);
 }
 
-/* carousel */
+/* about us */
 
-.slider {
-  position: relative;
-  height: 50vw;
-}
-
-.slider__control {
-  z-index: 2;
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  width: 60px;
-  height: 60px;
-  margin-left: -35px;
-  border-radius: 50%;
-  background: #fff;
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-
-.slider__control--right {
-  left: 97%;
-}
-
-.slider__control:hover {
-  background-color: #9efff5;
-}
-
-.slider__control-line {
-  position: absolute;
-  top: 50%;
-  left: 23px;
-  width: 3px;
-  height: 14px;
-  transform-origin: 50% 0;
-  transform: rotate(-45deg);
-}
-
-.slider__control-line:nth-child(2) {
-  transform: translateY(1px) rotate(-135deg);
-}
-
-.slider__control--right .slider__control-line {
-  left: 37px;
-  transform-origin: 50% 0;
-  transform: rotate(45deg);
-}
-
-.slider__control--right .slider__control-line:nth-child(2) {
-  transform: translateY(1px) rotate(135deg);
-}
-
-.slider__control-line:after {
-  content: "";
-  position: absolute;
+.team{
+  display: block;
   width: 100%;
-  height: 100%;
-  background-color: #e2e2e2;
-  transition: background-color 0.3s;
 }
 
-.slider__control:hover .slider__control-line:after {
-  background-color: #211c37;
+.bio{
+  display: inline-block;
+  width: 20%;
+  padding-left: 10%;
 }
 
-.slider__control.a--rotation .slider__control-line:after {
-  animation: arrowLineRotation 0.49s;
+.member{
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #9efff5;
+  font-family: 'Comfortaa', cursive;
+  font-size: 23px;
+  
+}
+
+.image{
+  display: block;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  margin: 6%;
 }
 
 /* media */
 
-@media (max-width: 700px){
-  .slider__control {
-    left: 30%;
-    width: 10%;
-    height: 20%;
-    margin-left: -26%;
-  }
-
-  .slider__control--right {
-    left: 110%;
-  }
-
-  .slider__control-line {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    width: 3px;
-    height: 14px;
-  }
-
-  .slider__control--right .slider__control-line {
-    left: 65%;
+@media only screen and (max-width: 1260px){
+  .member{
+    font-size: 18px;
   }
 }
 
-/* keyframes */
-
-@keyframes arrowLineRotation {
-  to {
-    transform: rotate(180deg);
+@media only screen and (max-width: 1160px){
+  .member{
+    font-size: 16px;
   }
 }
 
-@keyframes arrowLineRotationRev {
-  to {
-    transform: rotate(-180deg);
+@media only screen and (max-width: 1032px){
+  .bio{
+    display: block;
+    width: 25%;
+    padding-left: 38%;
+  }
+
+  .member{
+    font-size: 24px;
   }
 }
 
-.slide {
-  display: block;
-  position: absolute;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%);
-  border-radius: 50%;
-  transition: clip-path 0s 0.91s;
-  clip-path: circle(30px at center);
+@media only screen and (max-width: 754px){
+  .bio{
+    width: 75%;
+    padding-left: 15%;
+  }
+
+  .member{
+    font-size: 20px;
+  }
 }
 
-.slide.s--active {
-  z-index: 1;
-  transition: clip-path 1.3s;
-  clip-path: circle(120vmax at center);
+/* modal window */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1050;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in; 
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+  pointer-events: none; /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
 }
 
-.slide:nth-child(1) .slide__inner {
-  background-image: url("image/Илья.jpg");
+.modal:target {
+  opacity: 1; /* делаем окно видимым */
+  pointer-events: auto; /* элемент видим для событий мыши */
+  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
 }
 
-.slide:nth-child(2) .slide__inner {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg");
+.modal-dialog {
+  position: relative;
+  width: auto; /* ширина модального окна и его отступы от экрана */
+  margin: 10px;
 }
 
-.slide:nth-child(3) .slide__inner {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg");
+/* media */
+
+.modal-content {
+  position: relative; /* свойства для блока, содержащего контент модального окна */ 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  outline: 0;
 }
 
-.slide__inner {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: inherit;
-  background-size: cover;
-  background-position: center center;
+/* media */
+
+@media (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+
+/* свойства для заголовка модального окна */
+.modal-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #000000;
+  font-family: 'Comfortaa', cursive;
+}
+
+.modal-title a{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000000;
+  font-family: 'Comfortaa', cursive;
+}
+
+.close {
+  float: right;
+  margin-bottom: 20%;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  text-decoration: none;
+}
+
+.close:focus, .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .75;
+}
+
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+  color: #000000;
+  font-family: 'Comfortaa', cursive;
 }
 
 /* footer */
