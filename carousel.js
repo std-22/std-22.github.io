@@ -1,25 +1,25 @@
 (function() {
-    var $controls = document.querySelectorAll('.slider__control');
-    var slidingAT = 1300;
-    var slidingBlocked = false;
+  var $controls = document.querySelectorAll('.slider__control');
+  var slidingAT = 1300;
+  var slidingBlocked = false;
   
-    [].slice.call($controls).forEach(function($el) {
-      $el.addEventListener('click', controlClickHandler);
-    });
+  [].slice.call($controls).forEach(function($el) {
+    $el.addEventListener('click', controlClickHandler);
+  });
   
-    function controlClickHandler() {
-      if (slidingBlocked) return;
-      slidingBlocked = true;
+  function controlClickHandler() {
+    if (slidingBlocked) return;
+    slidingBlocked = true;
   
-      var $control = this;
-      $control.classList.add('a--rotation');
+    var $control = this;
+    $control.classList.add('a--rotation');
   
-      setTimeout(function() {
-        $control.classList.remove('a--rotation');
-        slidingBlocked = false;
-      }, slidingAT * 0.75);
-    };
-  }());
+    setTimeout(function() {
+      $control.classList.remove('a--rotation');
+      slidingBlocked = false;
+    }, slidingAT * 0.75);
+  };
+}());
 
 var slideIndex = 1;
 showSlides(slideIndex);

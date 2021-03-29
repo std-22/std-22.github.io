@@ -24,7 +24,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover{
-      background-color: #ded;
+    background-color: #ded;
 }
 
 ::-webkit-resizer{
@@ -113,13 +113,34 @@ html {
     }
 }
 
-.menu.active {
-    left: 0;
-}
+.menu.active { left: 0; }
 
 .menu p a{
     font-size: 1.8rem;
     color: #211c37;
+}
+
+/* contacts */
+
+.container{
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    z-index: 990;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+  
+.social_nets a{ filter: grayscale(0%); }
+.social_nets a:hover{ filter: grayscale(80%); }
+
+/* media */
+
+@media only screen and (max-width: 1000px){
+    .container{
+        display: none;
+    }
 }
 
 /* information */
