@@ -131,8 +131,8 @@ html, body {
     text-align: center;
 }
 
-.social_nets a{ filter: grayscale(0%); }
-.social_nets a:hover{ filter: grayscale(80%); }
+.social_nets a { filter: grayscale(0%); }
+.social_nets a:hover { filter: grayscale(80%); }
 
 /* text */
 
@@ -149,166 +149,49 @@ h1 {
 
 /* planet_1 */
 
-.planet_1 img{
+.planets img:nth-child(1) {
     position: relative;
-    top: 20px;
+    top: -400px;
     left: 300px;
 }
 
-#name_1 {
+#name {
     position: relative;
     color: #9efff5;
     font-family: 'Comfortaa', cursive;
     font-size: 28px;
-    top: 20px;
-    left: 490px;
+    text-align: center;
+    top: -300px;
     opacity: 0;
     transition: 0.4s;
 }
 
-#line_1{
-    position: relative;
-    stroke: #9efff5;
-    fill: none;
-    stroke-width: 3px;
-    transform: rotate(-90deg) scale(-1, 1);
-    left: -150px;
-    top: 535px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.planet_1 img:hover ~ #name_1{
-    opacity: 1;
-    transition: 0.6s;
-}
-
-.planet_1 img:hover ~ #line_1{
+.planets img:hover ~ #name {
     opacity: 1;
     transition: 0.6s;
 }
 
 /* planet_2 */
 
-.planet_2 img{
+.planets img:nth-child(2) {
     position: relative;
-    top: -420px;
-    left: 1200px;
-}
-
-#name_2 {
-    position: relative;
-    color: #9efff5;
-    font-family: 'Comfortaa', cursive;
-    font-size: 28px;
-    top: -430px;
-    left: 880px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-#line_2{
-    position: relative;
-    stroke: #9efff5;
-    fill: none;
-    stroke-width: 3px;
-    transform: rotate(90deg);
-    top: 90px;
-    left: 300px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.planet_2 img:hover ~ #name_2{
-    opacity: 1;
-    transition: 0.6s;
-}
-
-.planet_2 img:hover ~ #line_2{
-    opacity: 1;
-    transition: 0.6s;
+    top: -320px;
+    left: 1100px;
 }
 
 /* planet_3 */
 
-.planet_3 img{
+.planets img:nth-child(3) {
     position: relative;
-    top: -740px;
-    left: -140px;
-}
-
-#name_3 {
-    position: relative;
-    color: #9efff5;
-    font-family: 'Comfortaa', cursive;
-    font-size: 28px;
-    top: -1180px;
-    left: 480px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-#line_3{
-    position: relative;
-    stroke: #9efff5;
-    fill: none;
-    stroke-width: 3px;
-    transform: rotate(-90deg);
-    top: -1965px;
-    left: -250px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.planet_3 img:hover ~ #name_3{
-    opacity: 1;
-    transition: 0.6s;
-}
-
-.planet_3 img:hover ~ #line_3{
-    opacity: 1;
-    transition: 0.6s;
+    top: 400px;
+    left: -440px;
 }
 
 /* planet_4 */
 
-.planet_4 img{
+.planets img:nth-child(4) {
     position: relative;
-    top: -1380px;
-    left: 700px;
-}
-
-#name_4 {
-    position: relative;
-    color: #9efff5;
-    font-family: 'Comfortaa', cursive;
-    font-size: 28px;
-    top: -1400px;
-    left: 880px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-#line_4 {
-    position: relative;
-    stroke: #9efff5;
-    fill: none;
-    stroke-width: 3px;
-    transform: rotate(-90deg) scale(-1, 1);
-    top: -795px;
-    left: 180px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.planet_4 img:hover ~ #name_4 {
-    opacity: 1;
-    transition: 0.6s;
-}
-
-.planet_4 img:hover ~ #line_4 {
-    opacity: 1;
-    transition: 0.6s;
+    left: -200px;
 }
 
 /* sky */
@@ -329,37 +212,15 @@ h1 {
     animation-iteration-count: infinite;
 }
 
-.star.style1 { 
-    animation-duration: 0.5s; 
-    animation-name: star; 
-}
-
-.star.style2 { 
-    animation-duration: 1s; 
-    animation-name: star; 
-}
-
-.star.style3 {
-    animation-duration: 1.5s;
-    animation-name: star; 
-}
+.star.style1 { animation-duration: 0.5s; animation-name: star; }
+.star.style2 { animation-duration: 1s;   animation-name: star; }
+.star.style3 { animation-duration: 1.5s; animation-name: star; }
   
-.star.size1 { 
-    width: 1px; 
-    height: 1px; 
-}
-
-.star.size2 { 
-    width: 2px; 
-    height: 2px; 
-}
-
-.star.size3 { 
-    width: 3px; 
-    height: 3px; 
-}
+.star.size1 { width: 1px; height: 1px; }
+.star.size2 { width: 2px; height: 2px; }
+.star.size3 { width: 3px; height: 3px; }
   
-.star.opacity1 { opacity:  1; }
+.star.opacity1 { opacity:   1; }
 .star.opacity2 { opacity: 0.8; }
 .star.opacity3 { opacity: 0.6; }
   
@@ -426,9 +287,9 @@ h1 {
 
 /* footer */
 
-.wrapper {
-	  position: relative;
-	  min-height: 100%;
+.wrapper { 
+    position: relative; 
+    min-height: 100%; 
 }
 
 .content { padding-bottom: auto; }
