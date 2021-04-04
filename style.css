@@ -237,6 +237,11 @@ h1{
     background-size: 100% 100%;
 }
 
+#example-4 {
+    background: url("image/strategy.png");
+    background-size: 100% 100%;
+}
+
 /* media */
 
 @media (max-width: 1200px) {
@@ -301,7 +306,7 @@ h1{
     width: 100%;
     color: #9efff5;
     font-family: 'Comfortaa', cursive;
-    font-size: 23px;
+    font-size: 22px;
 }
 
 .image{
@@ -372,8 +377,6 @@ h1{
     margin: 10px;
 }
 
-/* media */
-
 .modal-content {
     position: relative; /* свойства для блока, содержащего контент модального окна */ 
     display: -webkit-box;
@@ -410,6 +413,7 @@ h1{
 }
 
 /* свойства для заголовка модального окна */
+
 .modal-header {
     display: -webkit-box;
     display: -webkit-flex;
