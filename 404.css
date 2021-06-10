@@ -1,6 +1,7 @@
 html {
     background: #211c37;
     overflow-x: hidden;
+    overflow-y: hidden;
     margin-right: calc(-1 * (100vw - 100%));
 }
 
