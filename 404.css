@@ -74,3 +74,109 @@ html {
 
 .button a:hover { background: rgba(255,255,255,.2); }
 .button a:active { background: white; }
+
+/* media */
+
+@media screen and (max-width: 1250px){
+    .image {
+        margin-top: -120px;
+        width: 386px;
+        height: 543px;
+    }
+
+    .message{
+        font-size: 44px;
+        margin-top: -186px;
+    }
+
+    .status{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .message{
+        font-size: 34px;
+    }
+
+    .status{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 670px) {
+    .image {
+        margin-top: -53px;
+        width: 171px;
+        height: 241px;
+    }
+
+    .message{
+        font-size: 15px;
+        margin-top: -62px;
+    }
+
+    .status{
+        font-size: 18px;
+    }
+
+    .button a {
+        margin: 15px auto;
+        border: 2px solid;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+
+/* footer */
+
+.wrapper {
+	display: table;
+	height: 100%;
+}
+
+.content {
+	display: table-row;
+	height: 100%;
+}
+
+.footer {
+    height: 30px;
+    background: #211c37;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.rights {
+    margin-top: 0px;
+}
+
+a {
+    color: #FFFAFA;
+    text-decoration: none;
+}
+
+/* media */
+
+@media screen and (max-width: 1250px){
+    .wrapper {
+        padding-bottom : 20px;
+    }
+    
+    .footer {
+        height: 30px;
+        background: #211c37;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

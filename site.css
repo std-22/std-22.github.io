@@ -318,17 +318,108 @@ body{
     min-height: 100%;
 }
 
+.info_header h1{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFAFA;
+}
+
+/* spinner */
+
+nav {
+	margin: 30px auto; 
+	text-align: center;
+}
+
+nav ul {
+	margin-left: 0;
+	padding-left: 0;
+	width: 600px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+nav ul li {
+	float: left;
+	width: 600px;
+	text-align: left;
+	border-bottom: 3px solid #9efff5; 
+}
+
+nav ul li a {
+	display: block; 
+}
+
+@keyframes appearence {
+    from {opacity: 0;} to {opacity: 1;}
+}
+					
+nav ul ul {
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+}
+
+nav ul li {
+	float: none;
+	border-bottom: 2px solid #eaeaea; 
+	position: relative;
+}
+
+nav ul li label {
+	color: #9efff5;
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+}	
+
+nav ul li section {
+	color: #9efff5;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}	
+
+#down-triangle {
+	float: right;
+	width: 0; 
+ 	height: 0;
+ 	margin-top: 25px;
+ 	border-top: 10px solid #FFFAFA;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+}
+
+#list_button_design:checked ~ #content_1,
+#list_button_support:checked ~ #content_2,
+#list_button_analytics:checked ~ #content_3,
+#list_button_new:checked ~ #content_4 {
+    display: block;
+    margin-top: 0px;
+    animation: appearence 1.5s;
+}
+
+/* media */
+
+@media screen and (max-width: 700px){
+    .info_header h1{ font-size: 25px; }
+
+    nav ul { width: 300px; }
+
+    nav ul li { width: 300px; }
+
+    nav ul li label { font-size: 18px; }
+}
+
 /* footer */
 
 .wrapper {
-	display: table;
-	height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
-.content {
-	display: table-row;
-	height: 100%;
-}
+.content { padding-bottom: 40px; }
 
 .footer {
     height: 30px;
@@ -342,31 +433,9 @@ body{
     right: 0;
 }
 
-.rights {
-    margin-top: 0px;
-}
+.rights { margin-top: 0px; }
 
 a {
-    color: #9efff5;
+    color: #FFFAFA;
     text-decoration: none;
-}
-
-/* media */
-
-@media screen and (max-width: 1250px){
-    .wrapper {
-        padding-bottom : 20px;
-    }
-    
-    .footer {
-        height: 30px;
-        background: #211c37;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
 }

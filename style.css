@@ -190,10 +190,11 @@ body {
 h1{
     text-align: center;
     font-size: 30px;
+    color: #FFFAFA;
 }
 
 .info_header h1{
-    color: #9efff5;
+    color: #FFFAFA;
     font-family: 'Comfortaa', cursive;
     font-size: 30px;
     justify-content: center;
