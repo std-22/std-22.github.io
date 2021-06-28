@@ -185,7 +185,10 @@ body {
     justify-self: end;
 }
 
-.information div a{ text-decoration: underline; }
+.information div a{ 
+    text-decoration: underline;
+    color: #9efff5;
+}
 
 h1{
     text-align: center;
