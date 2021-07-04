@@ -162,12 +162,28 @@ body {
     top: 550px;
 }
 
+.mockup1{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 656px;
+    top: 20px;
+}
+
 .tel{
     position: absolute;
     width: 412px;
     height: 724px;
     left: 208px;
     top: 806px;
+}
+
+.mockup2{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 65px;
+    top: 830px;
 }
 
 .header_2{
@@ -240,6 +256,14 @@ body {
     color:#F9D19A;
 }
 
+.mockup3{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 686px;
+    top: 1610px;
+}
+
 .header_4{
     position: absolute;
     width: 544px;
@@ -273,12 +297,44 @@ body {
     top: 2350px;
 }
 
+.mockup4{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 0px;
+    top: 2390px;
+}
+
+.mockup5{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 736px;
+    top: 2390px;
+}
+
+.mockup6{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 366px;
+    top: 2390px;
+}
+
 .hist{
     position: absolute;
     width: 80px;
     height: 587px;
     left: 663px;
     top: 3270px;
+}
+
+.mockup7{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 100px;
+    top: 3230px;
 }
 
 .header_5{
