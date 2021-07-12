@@ -154,6 +154,12 @@ body {
     color:#F9D19A;
 }
 
+.content_1 a{
+    color: #F9D19A;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .down_view{
     position: absolute;
     width: 952px;
