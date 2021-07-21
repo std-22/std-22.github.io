@@ -166,6 +166,10 @@ h1 {
     transition: 0.4s;
 }
 
+.planets img:hover{
+    cursor: pointer;
+}
+
 .planets img:hover ~ #name {
     opacity: 1;
     transition: 0.6s;
@@ -217,12 +221,12 @@ h1 {
 .star.style3 { animation-duration: 1.5s; animation-name: star; }
   
 .star.size1 { width: 1px; height: 1px; }
-.star.size2 { width: 2px; height: 2px; }
-.star.size3 { width: 3px; height: 3px; }
+.star.size2 { width: 1.5px; height: 1.5px; }
+.star.size3 { width: 2px; height: 2px; }
   
-.star.opacity1 { opacity:   1; }
-.star.opacity2 { opacity: 0.8; }
-.star.opacity3 { opacity: 0.6; }
+.star.opacity1 { opacity: 0.95; }
+.star.opacity2 { opacity: 0.85; }
+.star.opacity3 { opacity: 0.75; }
   
 .meteoro.style1 { animation-name: meteoroStyle1; }
 .meteoro.style2 { animation-name: meteoroStyle2; }
@@ -230,13 +234,13 @@ h1 {
   
 @keyframes star {
     0% {
-        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.3);
     }
     50% {
-        box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 10px 0.5px rgba(255, 255, 255, 1);
     }
     100% {
-        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.3);
     }
 }
   
@@ -246,8 +250,8 @@ h1 {
         right: 300px; 
         top: 100px; 
     }
-    30% { opacity: 0.3; }
-    60% { opacity: 0.3; }
+    30% { opacity: 1; }
+    60% { opacity: 1; }
     100% { 
         opacity: 0; 
         right: 1000px; 
@@ -284,6 +288,31 @@ h1 {
         top: 1000px; 
     }
 }
+
+/* chat */
+
+#info {
+    position: absolute;
+    float: right;
+    right: 10%;
+    background: #FFFAFA;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    line-height: 1.5em;
+}
+  
+#info::after, #info::before {
+    content: "";
+    position: absolute;
+    left: 105%;
+    bottom: .5em;
+    width: 1.8em;
+    height: 1.8em;
+    border: .5em solid #9efff5;
+    border-radius: 50%;
+    background: #211c37;
+}
+  
 
 /* footer */
 

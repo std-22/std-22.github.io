@@ -48,13 +48,16 @@
         <script src="sky.js"></script>
 
         <div class="planets">
-            <img src="image/planets/planet-1.png" alt="img Site of Studio 22" onmouseover="document.getElementById('name').innerText ='Site of Studio 22'">
-            <img src="image/planets/planet-7.png" alt="Music telegram bot" onmouseover="document.getElementById('name').innerText ='Music telegram bot'">
-            <img src="image/planets/planet-8.png" alt="LAMA" onmouseover="document.getElementById('name').innerText ='LAMA'">
-            <img src="image/planets/planet-4.png" alt="Music bot" onmouseover="document.getElementById('name').innerText ='Music bot'">
+            <img src="image/planets/planet-1.png" alt="img Site of Studio 22" onmouseover="document.getElementById('name').innerText ='Site of Studio 22'" onclick="showResult(this)" class="planet_site">
+            <img src="image/planets/planet-7.png" alt="Music telegram bot" onmouseover="document.getElementById('name').innerText ='Music telegram bot'" onclick="showResult(this)" class="planet_tg_bot">
+            <img src="image/planets/planet-8.png" alt="LAMA" onmouseover="document.getElementById('name').innerText ='LAMA'" onclick="showResult(this)" class="planet_lama">
+            <img src="image/planets/planet-4.png" alt="Music bot" onmouseover="document.getElementById('name').innerText ='Music bot'" onclick="showResult(this)" class="planet_bot">
 
+            <div id="info">Здесь пишется история нашей компании, не только прошлое, но и будущее...</div>
             <div id="name"></div>
         </div>
+
+        <script src="chat.js"></script>
 
         <!--FOOTER-->
         <div class="wrapper">
