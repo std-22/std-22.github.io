@@ -293,6 +293,8 @@ h1 {
 
 #info {
     position: absolute;
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.9em;
     float: right;
     right: 10%;
     background: #FFFAFA;
