@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Фавикон-->
+        <link rel="icon" href="favicon.ico">
+
+        <!--мобильная адаптация-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Нормализация стилей-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+        <!--Собственные стили-->
+        <link rel="stylesheet" href="sky.css">
+
+        <!--Подключение шрифтов-->
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa&display=swap" rel="stylesheet">
+
+        <!--Запрет масштабирования-->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--Описание-->
+        <title>Наши проекты</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Стратегия развития компании">
+        <meta name="keywords" content="Projects, content, planets">
+    </head>
+
+    <body>
+        <!--NAVIGATION-->
+        <div class="menu">
+            <p><a href="index.html" id="header-menu" class="active">Studio 22</a></p>
+            <p><a href="site.html" id="header-menu" class="active">Web development</a></p>
+            <p><a href="mobile.html" id="header-menu" class="active">Mobile development</a></p>
+            <p><a href="app.html" id="header-menu">Company strategy</a></p>
+        </div>
+        <div class="menu__toggler"><span>   </span></div>
+
+        <script src="navicon.js"></script>
+
+        <!-- TITLE -->
+        <h1>Стратегия развития компании</h1>
+
+        <!-- SKY -->
+        <div class="polotno"></div>
+        <div class="elements"></div>
+
+        <script src="sky.js"></script>
+
+        <div class="planets">
+            <!--<img src="image/planets/planet-1.png" alt="img Site of Studio 22" onmouseover="document.getElementById('name').innerText ='Site of Studio 22'" onclick="showResult(this)" class="planet_site">
+            <img src="image/planets/planet-7.png" alt="Music telegram bot" onmouseover="document.getElementById('name').innerText ='Music telegram bot'" onclick="showResult(this)" class="planet_tg_bot">
+            <img src="image/planets/planet-8.png" alt="LAMA" onmouseover="document.getElementById('name').innerText ='LAMA'" onclick="showResult(this)" class="planet_lama">
+            <img src="image/planets/planet-4.png" alt="Music bot" onmouseover="document.getElementById('name').innerText ='Music bot'" onclick="showResult(this)" class="planet_bot">-->
+
+            <div id="info">Здесь пишется история нашей компании, не только прошлое,<br>но и будущее...</div>
+            <div id="name"></div>
+        </div>
+
+        <script src="chat.js"></script>
+
+        <!--FOOTER-->
+        <div class="wrapper">
+            <div class="content"></div>
+            
+            <div class="footer">
+                <div class="rights">
+                    <a>2020 © Studio 22. All rights reserved.</a>
+                </div>              
+            </div>
+        </div>
+    </body>
+</html>
