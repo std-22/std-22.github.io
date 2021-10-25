@@ -102,12 +102,6 @@ html {
     color: #211c37;
 }
 
-@media only screen and (max-width: 1000px) {
-    .menu p:nth-child(4){
-        display: none;
-    }
-}
-
 /* contacts */
 
 .container{
@@ -125,14 +119,6 @@ html {
     filter: grayscale(0%); 
 }
 .social_nets a:hover{ filter: grayscale(80%); }
-
-/* media */
-
-@media only screen and (max-width: 1000px){
-    .container{
-        display: none;
-    }
-}
 
 /* body */
 
@@ -161,7 +147,7 @@ body {
 
 .information_1 {
     display: grid;
-    margin: 3% 3% 10% 3%;
+    margin: 3% 3% 5% 3%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
     row-gap: 6%;
     column-gap: 8%;
@@ -206,92 +192,81 @@ h1{
     justify-content: center;
 }
 
-/* portfolio */
+/* our projects */
 
-.portfolio {
-    display: grid;
-    margin: 3% 10% 5% 10%;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
-    grid-auto-rows: 200px;
-    justify-content: center;
-    justify-self: center;
-    column-gap: 10%;
-    row-gap: 15%;
+img{ width: 100%; }
+
+.slider { 
+    margin-top: 20px;
+    margin-bottom: 30px; 
 }
 
-/* media */
-
-@media only screen and (max-width: 1260px){
-    .portfolio{
-        margin: 5% 5% 5% 5%;
-        row-gap: 5%;
-    }
-}
-
-#example-1 {
-    background: url("image/about-us-2.png");
-    background-size: 150% 100%;
-    background-position: 50%;
-}
-
-#example-2 {
-    background: url("image/lama.png");
-    background-size: 100% 100%;
-}
-
-#example-3 {
-    background: url("image/wave.png");
-    background-size: 100% 100%;
-}
-
-#example-4 {
-    background: url("image/strategy.png");
-    background-size: 100% 100%;
-}
-
-/* media */
-
-@media (max-width: 1200px) {
-    #example-0 {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-.example {
-    font-family: 'Comfortaa', cursive;
-    border-radius: 50% 50% 50% 50% / 40px 40px 40px 40px;
-    background: rgba(0,0,0,0);
+.slides {
+    display: none;
     position: relative;
-    transition: all 0.4s cubic-bezier(.99,.99,0,.61);
-    color: #ffffff;
-    overflow: hidden;
+    height: 22vw;
+    animation: show 1s;
 }
 
-.example a {
-    color: #211c37;
-    cursor: pointer;
+@keyframes show {
+    from {opacity: 0.6;} to {opacity: 1;} 
 }
 
-.example .title {
-    font-size: 16pt;
-    line-height: 2em;
-    height: 9em;
-    width: 100%;
-    text-align: center;
+.slider_control_wrapper { display: flex; position: relative; }
+
+/* slide controller */
+
+.slider__control_left {
     position: absolute;
-    font-size: 10pt;
-    overflow: hidden;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    left: 10px;
+    bottom: 100px;
 }
 
-.title { visibility: hidden; }
+.slider__control_right {
+    position: absolute;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    right: 10px;
+    bottom: 100px;
+}
 
-.example:hover .title {
-    transition: all 0.4s cubic-bezier(0,0,0.38,1);
-    visibility: visible;
-    bottom: -20px;
-    font-size: 24px;
-    background-color: rgba(226, 226, 226, 0.6);
+.slider__control_left:hover { background-color: #9efff5; }
+.slider__control_right:hover { background-color: #9efff5; }
+
+.slider__control_left img{
+    width: 72%;
+    position: relative;
+    left: 6px;
+    top: 8px;
+}
+
+.slider__control_right img{
+    width: 72%;
+    position: relative;
+    left: 12px;
+    top: 8px;
+}
+
+.slider_control_wrapper.a--rotation img{
+    animation: sh 0.5s;
+}
+
+/* animation */
+
+@keyframes sh {
+    from {transform: rotate(0deg);} to {transform: rotate(360deg);}
 }
 
 /* about us */
@@ -299,6 +274,7 @@ h1{
 .team{
     display: block;
     width: 100%;
+    margin: 0% 0% 6% 0%;
 }
 
 .bio{
@@ -489,6 +465,29 @@ h1{
     color: #000000;
     font-family: 'Comfortaa', cursive;
 }
+
+/* button */
+
+.button {
+    text-align: center;
+}
+
+.button a {
+    display: inline-block;
+    margin: 50px 30px auto;
+    color: #FFFAFA;
+    text-decoration: none;
+    padding: .4em 2em;
+    border: 4px solid;
+    border-radius: 12px;
+    transition: 0.2s;
+    font-family: 'Comfortaa', cursive;
+    font-size: 34px;
+    align-content: center;
+}
+
+.button a:hover { background: rgba(255,255,255,.2); }
+.button a:active { background: white; }
 
 /* footer */
 

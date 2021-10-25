@@ -44,10 +44,10 @@
         <body>
             <!--Навигация-->
             <div class="menu">
-                <p><a href="index.html" id="header-menu">Studio 22</a></p>
-                <p><a href="site.html" id="header-menu" class="active">Web development</a></p>
-                <p><a href="mobile.html" id="header-menu" class="active">Mobile development</a></p>
-                <p><a href="app.html" id="header-menu" class="active">Company strategy</a></p>
+                <p><a href="index.html" id="header-menu">Главная</a></p>
+                <p><a href="site.html" id="header-menu" class="active">Сайт студии</a></p>
+                <p><a href="mobile.html" id="header-menu" class="active">Лама</a></p>
+                <p><a href="app.html" id="header-menu" class="active">Проекты</a></p>
             </div>
             <div class="menu__toggler"><span>   </span></div>
 
@@ -56,10 +56,16 @@
             <!--Контакты-->
             <div class="container">
                 <div class="social_nets">
-                    <a href="https://vk.com/std_22"><i class="fa fa-vk fa-3x"></i></a>
+                    <a href="https://vk.com/std_22"><i class="fa fa-vk fa-2x"></i></a>
                 </div>
                 <div class="social_nets">
-                    <a href="https://github.com/std-22"><i class="fa fa-github fa-3x"></i></a>
+                    <a href="https://github.com/std-22"><i class="fa fa-github fa-2x"></i></a>
+                </div>
+                <div class="social_nets">
+                    <a href="https://www.youtube.com/channel/UCrgJ6LqCnSO3dQTEv2aYu2A"><i class="fa fa-youtube-play fa-2x"></i></a>
+                </div>
+                <div class="social_nets">
+                    <a href="https://yandex.ru/q/org/studio_22/"><i class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -128,18 +134,8 @@
                 </div>
             </div>
 
-            <div class="info_header">
-                <h1>Наши проекты</h1>
-            </div>
-
-            <div class="portfolio">
-                <div class="example" id="example-1"><h2 class="title"><br/><br/><a href="site.html">Сайт-портфолио</a></h2><h1></h1></div>
-                <div class="example" id="example-2"><h2 class="title"><br/><br/><a href="mobile.html">Lama</a></h2></div>
-                <div class="example" id="example-3"><h2 class="title"><br/><br/><a href="https://github.com/std-22/Music_Advisor">Spotify Music Advisor</a></h2></div>
-                <div class="example" id="example-4"><h2 class="title"><br/><br/><a href="app.html">Стратегия компании</a></h2></div>
-            </div>
-
             <!--Немного о нас-->
+
             <br></br>
             <div class="info_header">
                 <h1>Немного о нас</h1>
@@ -254,6 +250,40 @@
                 </div>
             </div>
 
+            <!--Наши проекты-->
+            <div class="info_header">
+                <h1>Наши проекты</h1>
+            </div>
+
+            <div class="slider">
+                <div class="slides">
+                    <img src="image/lama_adv.png">
+                </div>
+    
+                <div class="slides">
+                    <img src="image/spotify_adv.png">
+                </div>
+    
+                <div class="slides">
+                    <img src="image/MacrosCV_adv.png">
+                </div>
+    
+                <!--Контроллер слайдов-->
+                <div class="slider_control_wrapper">
+                    <div class="slider__control_left" onclick="plusSlides(-1)">
+                        <img class="arrow" src="image/prev.png">
+                    </div>
+
+                    <div class="slider__control_right" onclick="plusSlides(1)">
+                        <img class="arrow" src="image/next.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="button">
+                <a href="https://std-22.github.io/app.html">Подробнее</a>
+            </div>
+
             <!--Футер-->
             <div class="wrapper">
                 <div class="content"></div>
@@ -264,5 +294,8 @@
                     </div>
                 </div>
             </div>
+
+            <!--JS-->
+            <script src="carousel.js"></script>
         </body>
     </html>

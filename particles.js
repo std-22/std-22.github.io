@@ -20,7 +20,7 @@ var pJS = function(tag_id, params){
         value: 400,
         density: {
           enable: true,
-          value_area: 800
+          value_area: 2000
         }
       },
       color: {
@@ -62,14 +62,14 @@ var pJS = function(tag_id, params){
         }
       },
       line_linked: {
-        enable: true,
-        distance: 100,
+        enable: false,
+        distance: 50,
         color: '#fff',
         opacity: 1,
         width: 1
       },
       move: {
-        enable: true,
+        enable: false,
         speed: 2,
         direction: 'none',
         random: false,
@@ -85,10 +85,10 @@ var pJS = function(tag_id, params){
       array: []
     },
     interactivity: {
-      detect_on: 'canvas',
+      detect_on: 'window',
       events: {
         onhover: {
-          enable: true,
+          enable: false,
           mode: 'grab'
         },
         onclick: {
@@ -122,7 +122,7 @@ var pJS = function(tag_id, params){
       },
       mouse:{}
     },
-    retina_detect: false,
+    retina_detect: true,
     fn: {
       interact: {},
       modes: {},
@@ -720,10 +720,7 @@ var pJS = function(tag_id, params){
 
       p2.vx += ax;
       p2.vy += ay;
-
     }
-    
-
   }
 
 
@@ -1089,7 +1086,7 @@ var pJS = function(tag_id, params){
           pJS.interactivity.mouse.pos_y *= pJS.canvas.pxratio;
         }
 
-        pJS.interactivity.status = 'mousemove';
+        pJS.interactivity.status = '';
 
       });
 
@@ -1504,7 +1501,7 @@ window.particlesJS = function(tag_id, params){
 
   /* set size canvas */
   canvas_el.style.width = "100%";
-  canvas_el.style.height = "100%";
+  canvas_el.style.height = "110%";
 
   /* append canvas */
   var canvas = document.getElementById(tag_id).appendChild(canvas_el);

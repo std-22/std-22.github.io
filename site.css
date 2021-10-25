@@ -120,12 +120,6 @@ html {
     color: #211c37;
 }
 
-@media only screen and (max-width: 1000px) {
-    .menu p:nth-child(4){
-        display: none;
-    }
-}
-
 /* contacts */
 
 .container{
